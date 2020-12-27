@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>GUI</RootNamespace>
     <AssemblyName>GUI</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,14 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -85,6 +99,74 @@
       <Project>{72ac8939-93f4-44bf-8dbd-55b38dcd901e}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Icon\1x\baseline_assignment_ind_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_assignment_ind_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_ballot_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_ballot_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_get_app_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_get_app_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_home_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_home_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_menu_book_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_menu_book_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_search_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_settings_applications_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_supervised_user_circle_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_supervised_user_circle_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_swap_vertical_circle_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_swap_vertical_circle_white_18dp.png" />
+    <Content Include="Icon\1x\baseline_sync_alt_black_18dp.png" />
+    <Content Include="Icon\1x\baseline_sync_alt_white_18dp.png" />
+    <Content Include="Icon\1x\iconHeThong.png" />
+    <Content Include="Icon\1x\iconPasswordTrang.png" />
+    <Content Include="Icon\1x\iconTaiKhoanTrang.png" />
+    <Content Include="Icon\1x\outline_search_white_18dp.png" />
+    <Content Include="Icon\2x\baseline_assignment_ind_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_assignment_ind_white_18dp.png" />
+    <Content Include="Icon\2x\baseline_ballot_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_get_app_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_home_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_menu_book_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_search_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_supervised_user_circle_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_swap_vertical_circle_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_sync_alt_black_18dp.png" />
+    <Content Include="Icon\2x\baseline_sync_alt_white_18dp.png" />
+    <Content Include="Icon\2x\icondasdboad.png" />
+    <Content Include="Icon\2x\iconDocGia.png" />
+    <Content Include="Icon\2x\iconEx-ImportTrang.png" />
+    <Content Include="Icon\2x\iconHeThong.png" />
+    <Content Include="Icon\2x\iconHeThongTrang.png" />
+    <Content Include="Icon\2x\iconLuuTruTrang.png" />
+    <Content Include="Icon\2x\iconPasswordTrang.png" />
+    <Content Include="Icon\2x\iconQuyDinhTrang.png" />
+    <Content Include="Icon\2x\iconSachTrang.png" />
+    <Content Include="Icon\2x\iconTaiKhoanTrang.png" />
+    <Content Include="Icon\2x\iconThuVienTrang.png" />
+    <Content Include="Icon\2x\outline_search_white_18dp.png" />
+    <Content Include="Icon\agenda.png" />
+    <Content Include="Icon\iconAccount.png" />
+    <Content Include="Icon\iconBCDocGiaNoTienPhat.png" />
+    <Content Include="Icon\iconBCMuonTheoTheLoai.png" />
+    <Content Include="Icon\iconBCSachTraTre.png" />
+    <Content Include="Icon\iconChoMuonSach.png" />
+    <Content Include="Icon\iconLapTheDocGia.png" />
+    <Content Include="Icon\iconMatSach.png" />
+    <Content Include="Icon\iconNhanTraSach.png" />
+    <Content Include="Icon\iconThanhLySach.png" />
+    <Content Include="Icon\iconTheDocGia.png" />
+    <Content Include="Icon\iconThuTienPhat.png" />
+    <Content Include="Icon\iconTiepNhanNhanVien.png" />
+    <Content Include="Icon\iconTiepNhanSachMoi.png" />
+    <Content Include="Icon\iconTraCuuSach.png" />
+    <Content Include="Icon\open-book.png" />
+    <Content Include="Resources\iconLapTheDocGia.png" />
+    <Content Include="Resources\iconTheDocGia.png" />
+    <Content Include="Resources\iconTiepNhanNhanVien.png" />
+    <Content Include="Resources\iconTiepNhanNhanVien1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

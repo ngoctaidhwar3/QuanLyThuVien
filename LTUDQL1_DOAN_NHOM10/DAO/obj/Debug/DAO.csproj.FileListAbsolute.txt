@@ -1,0 +1,11 @@
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\bin\Debug\DAO.dll
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\bin\Debug\DAO.pdb
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\bin\Debug\DTO.dll
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\bin\Debug\DTO.pdb
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\obj\Debug\DAO.Properties.Resources.resources
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\obj\Debug\DAO.dll
+D:\Project\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\DAO\obj\Debug\DAO.pdb

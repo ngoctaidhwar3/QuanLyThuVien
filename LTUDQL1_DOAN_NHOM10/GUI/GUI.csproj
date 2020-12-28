@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangNhap\ManHinhDangNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangNhap\ManHinhDangNhap.Designer.cs">
+      <DependentUpon>ManHinhDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap\ManHinhDangNhapThanhCong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangNhap\ManHinhDangNhapThanhCong.Designer.cs">
+      <DependentUpon>ManHinhDangNhapThanhCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -61,6 +73,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DangNhap\ManHinhDangNhap.resx">
+      <DependentUpon>ManHinhDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap\ManHinhDangNhapThanhCong.resx">
+      <DependentUpon>ManHinhDangNhapThanhCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

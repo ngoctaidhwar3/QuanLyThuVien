@@ -65,6 +65,48 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuChucNang\ChucNangDocGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangDocGia.Designer.cs">
+      <DependentUpon>ChucNangDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangExportImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangExportImport.Designer.cs">
+      <DependentUpon>ChucNangExportImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangHeThong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangHeThong.Designer.cs">
+      <DependentUpon>ChucNangHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangLuuTru.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangLuuTru.Designer.cs">
+      <DependentUpon>ChucNangLuuTru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangQuyDinh1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangQuyDinh1.Designer.cs">
+      <DependentUpon>ChucNangQuyDinh1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangSach.Designer.cs">
+      <DependentUpon>ChucNangSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangThuVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuChucNang\ChucNangThuVien.Designer.cs">
+      <DependentUpon>ChucNangThuVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +123,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuChucNang\ChucNangDocGia.resx">
+      <DependentUpon>ChucNangDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuChucNang\ChucNangExportImport.resx">
+      <DependentUpon>ChucNangExportImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuChucNang\ChucNangHeThong.resx">
+      <DependentUpon>ChucNangHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuChucNang\ChucNangLuuTru.resx">
+      <DependentUpon>ChucNangLuuTru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuChucNang\ChucNangQuyDinh1.resx">
+      <DependentUpon>ChucNangQuyDinh1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuChucNang\ChucNangSach.resx">
+      <DependentUpon>ChucNangSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuChucNang\ChucNangThuVien.resx">
+      <DependentUpon>ChucNangThuVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>

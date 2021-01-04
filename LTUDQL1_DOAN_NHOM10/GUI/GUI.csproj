@@ -65,6 +65,72 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanDocGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanDocGia.Designer.cs">
+      <DependentUpon>ChucNangCapNhatBangLienQuanDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanSach.Designer.CS">
+      <DependentUpon>ChucNangCapNhatBangLienQuanSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLyDoThanhLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLyDoThanhLy.Designer.cs">
+      <DependentUpon>ChucNangCapNhatBangLyDoThanhLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangQuyDinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangQuyDinh.Designer.cs">
+      <DependentUpon>ChucNangCapNhatBangQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatThongTinNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatThongTinNhanVien.Designer.cs">
+      <DependentUpon>ChucNangCapNhatThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangChoMuonSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangChoMuonSach.Designer.cs">
+      <DependentUpon>ChucNangChoMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangGhiNhanMatSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangGhiNhanMatSach.Designer.cs">
+      <DependentUpon>ChucNangGhiNhanMatSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeDocGiaNoTienPhat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeDocGiaNoTienPhat.Designer.cs">
+      <DependentUpon>ChucNangLapBaoCaoThongKeDocGiaNoTienPhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeMuonSachTheoTheLoai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeMuonSachTheoTheLoai.Designer.cs">
+      <DependentUpon>ChucNangLapBaoCaoThongKeMuonSachTheoTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeSachTraTre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeSachTraTre.Designer.cs">
+      <DependentUpon>ChucNangLapBaoCaoThongKeSachTraTre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapPhieuThuTienPhat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapPhieuThuTienPhat.Designer.cs">
+      <DependentUpon>ChucNangLapPhieuThuTienPhat.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuChucNang\ChucNangDocGia.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +189,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanDocGia.resx">
+      <DependentUpon>ChucNangCapNhatBangLienQuanDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanSach.resx">
+      <DependentUpon>ChucNangCapNhatBangLienQuanSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangCapNhatBangLyDoThanhLy.resx">
+      <DependentUpon>ChucNangCapNhatBangLyDoThanhLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangCapNhatBangQuyDinh.resx">
+      <DependentUpon>ChucNangCapNhatBangQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangCapNhatThongTinNhanVien.resx">
+      <DependentUpon>ChucNangCapNhatThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangChoMuonSach.resx">
+      <DependentUpon>ChucNangChoMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangGhiNhanMatSach.resx">
+      <DependentUpon>ChucNangGhiNhanMatSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeDocGiaNoTienPhat.resx">
+      <DependentUpon>ChucNangLapBaoCaoThongKeDocGiaNoTienPhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeMuonSachTheoTheLoai.resx">
+      <DependentUpon>ChucNangLapBaoCaoThongKeMuonSachTheoTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangLapBaoCaoThongKeSachTraTre.resx">
+      <DependentUpon>ChucNangLapBaoCaoThongKeSachTraTre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangLapPhieuThuTienPhat.resx">
+      <DependentUpon>ChucNangLapPhieuThuTienPhat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuChucNang\ChucNangDocGia.resx">
       <DependentUpon>ChucNangDocGia.cs</DependentUpon>

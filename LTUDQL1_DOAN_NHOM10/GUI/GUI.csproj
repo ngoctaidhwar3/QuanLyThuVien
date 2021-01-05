@@ -131,6 +131,54 @@
     <Compile Include="ManHinhChucNang\ChucNangLapPhieuThuTienPhat.Designer.cs">
       <DependentUpon>ChucNangLapPhieuThuTienPhat.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapTheDocGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangLapTheDocGia.Designer.cs">
+      <DependentUpon>ChucNangLapTheDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangNhanTraSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangNhanTraSach.Designer.cs">
+      <DependentUpon>ChucNangNhanTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangQuanLyDocGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangQuanLyDocGia.Designer.cs">
+      <DependentUpon>ChucNangQuanLyDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangQuanLyNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangQuanLyNhanVien.Designer.cs">
+      <DependentUpon>ChucNangQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangThanhLySach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangThanhLySach.Designer.cs">
+      <DependentUpon>ChucNangThanhLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangTiepNhanNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangTiepNhanNhanVien.Designer.cs">
+      <DependentUpon>ChucNangTiepNhanNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangTiepNhanSachMoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangTiepNhanSachMoi.Designer.cs">
+      <DependentUpon>ChucNangTiepNhanSachMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangTraCuuSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManHinhChucNang\ChucNangTraCuuSach.Designer.cs">
+      <DependentUpon>ChucNangTraCuuSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuChucNang\ChucNangDocGia.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,6 +270,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManHinhChucNang\ChucNangLapPhieuThuTienPhat.resx">
       <DependentUpon>ChucNangLapPhieuThuTienPhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangLapTheDocGia.resx">
+      <DependentUpon>ChucNangLapTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangNhanTraSach.resx">
+      <DependentUpon>ChucNangNhanTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangQuanLyDocGia.resx">
+      <DependentUpon>ChucNangQuanLyDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangQuanLyNhanVien.resx">
+      <DependentUpon>ChucNangQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangThanhLySach.resx">
+      <DependentUpon>ChucNangThanhLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangTiepNhanNhanVien.resx">
+      <DependentUpon>ChucNangTiepNhanNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangTiepNhanSachMoi.resx">
+      <DependentUpon>ChucNangTiepNhanSachMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManHinhChucNang\ChucNangTraCuuSach.resx">
+      <DependentUpon>ChucNangTraCuuSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuChucNang\ChucNangDocGia.resx">
       <DependentUpon>ChucNangDocGia.cs</DependentUpon>

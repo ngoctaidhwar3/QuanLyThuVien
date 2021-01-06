@@ -8,20 +8,32 @@ namespace DTO
 {
     public class PhieuMuonDTO
     {
-        string maPM;
-        string maSach;
+        string MaPM, maDG;
 
-        public string MaPM
+        public string MaDG
         {
-            get { return maPM; }
-            set { maPM = value; }
-        }
-        public string MaSach
-        {
-            get { return maSach; }
-            set { maSach = value; }
+            get { return maDG; }
+            set { maDG = value; }
         }
 
+        public string MaPM1
+        {
+            get { return MaPM1; }
+            set { MaPM1 = value; }
+        }
+        DateTime ngayMuon, ngayHetHan;
+
+        public DateTime NgayHetHan
+        {
+            get { return ngayHetHan; }
+            set { ngayHetHan = value; }
+        }
+
+        public DateTime NgayMuon
+        {
+            get { return ngayMuon; }
+            set { ngayMuon = value; }
+        }
 
     }
 }

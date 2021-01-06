@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace DAO
 {
-    public class Provider
+    class Provider
     {
-
-        string ConnectionString = @"Data Source=DESKTOP-3EVUCF6\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+        string ConnectionString = @"Data Source=TAI_VT\NGOCTAI;Initial Catalog=QuanLyThuVien;Integrated Security=True";
 
         SqlConnection Connection;
-
+        
         public void Connect()
         {
             try
@@ -59,7 +58,7 @@ namespace DAO
             }
         }
 
-        public DataTable Select(CommandType cmdType, string strSql, params SqlParameter[] parameters)
+        public DataTable SELECT(CommandType cmdType, string strSql, params SqlParameter[] parameters)
         {
             try
             {
@@ -81,7 +80,7 @@ namespace DAO
                 throw ex;
             }
         }
-        public void AdapterUpdate(string strSql, DataTable dt)
+        public void AdapterUpdate(string strSql,DataTable dt)
         {
             try
             {

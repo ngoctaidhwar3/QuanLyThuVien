@@ -8,7 +8,7 @@ namespace DTO
 {
     public class PhieuMuonDTO
     {
-        string MaPM, maDG;
+        string maPM, maDG;
 
         public string MaDG
         {
@@ -16,10 +16,10 @@ namespace DTO
             set { maDG = value; }
         }
 
-        public string MaPM1
+        public string MaPM
         {
-            get { return MaPM1; }
-            set { MaPM1 = value; }
+            get { return maPM; }
+            set { maPM = value; }
         }
         DateTime ngayMuon, ngayHetHan;
 

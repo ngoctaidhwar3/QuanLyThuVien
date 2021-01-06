@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class PhieuMuonDTO
+    public class CT_PhieuMuonDTO
     {
         string maPM;
         string maSach;

@@ -50,11 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GhiNhanMatSachBUS.cs" />
     <Compile Include="NXBBUS.cs" />
+    <Compile Include="PhieuThuTienPhatBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyBaoCaoBUS.cs" />
     <Compile Include="QuanLyPhieuMuonBUS.cs" />
     <Compile Include="QuanLyPhieuTraBUS.cs" />
+    <Compile Include="QuanLyThanhLySach.cs" />
     <Compile Include="SachBUS.cs" />
     <Compile Include="TacGiaBUS.cs" />
     <Compile Include="TheLoaiBUS.cs" />

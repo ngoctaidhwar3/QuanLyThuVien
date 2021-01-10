@@ -54,6 +54,11 @@
     <Compile Include="DocGiaBUS\LoaiDocGiaBUS.cs" />
     <Compile Include="DocGiaBUS\TinhTrangDocGiaBUS.cs" />
     <Compile Include="GhiNhanMatSachBUS.cs" />
+    <Compile Include="NhanVienBUS\BangCapBUS.cs" />
+    <Compile Include="NhanVienBUS\BoPhanBUS.cs" />
+    <Compile Include="NhanVienBUS\ChucVuBUS.cs" />
+    <Compile Include="NhanVienBUS\NhanVienBUS.cs" />
+    <Compile Include="NhanVienBUS\TinhTrangNhanVienBUS.cs" />
     <Compile Include="NXBBUS.cs" />
     <Compile Include="PhieuThuTienPhatBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,8 +101,6 @@
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NhanVienBUS\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

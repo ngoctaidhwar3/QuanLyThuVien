@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static GUI.MainForm;
+using static GUI.MenuForm;
 
 namespace GUI.MenuChucNang
 {
@@ -60,10 +60,7 @@ namespace GUI.MenuChucNang
             this.ChuyenManHinhChucNang(4);
         }
 
-        private void btnItemChoMuonSach_Click(object sender, EventArgs e)
-        {
-            this.ChuyenManHinhChucNang(5);
-        }
+      
 
         private void btnItemNhanTraSach_Click(object sender, EventArgs e)
         {
@@ -78,6 +75,11 @@ namespace GUI.MenuChucNang
         private void btnItemThanhLySach_Click(object sender, EventArgs e)
         {
             this.ChuyenManHinhChucNang(9);
+        }
+
+        private void btnItemChoMuonSach_Click(object sender, EventArgs e)
+        {
+            this.ChuyenManHinhChucNang(5);
         }
     }
 }

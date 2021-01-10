@@ -4,34 +4,35 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using DAO;
+using DTO;
 namespace BUS
 {
     public class SachBUS
     {
         public static bool WasExistBookId(string bookId)
         {
-            return DAO.SachDAO.WasExistBookId(bookId);
+            return SachDAO.WasExistBookId(bookId);
         }
 
         public static DataTable GetDatasByCommand(string cmd)
         {
-            return DAO.SachDAO.GetDatasByCommand(cmd);
+            return SachDAO.GetDatasByCommand(cmd);
         }
 
         public static DataTable GetDatasByStoredProcedure(string cmd)
         {
-            return DAO.SachDAO.GetDatasByStoredProcedure(cmd);
+            return SachDAO.GetDatasByStoredProcedure(cmd);
         }
 
-        public static int AddANewBook(DTO.Sach book)
+        public static int AddANewBook(Sach book)
         {
-            return DAO.SachDAO.AddANewBook(book);
+            return SachDAO.AddANewBook(book);
         }
 
-        public static DataTable FindBook(DTO.Sach book)
+        public static DataTable FindBook(Sach book)
         {
-            return DAO.SachDAO.FindBook(book);
+            return SachDAO.FindBook(book);
         }
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
-using static GUI.ManHinhThucDonForm;
+using static GUI.MenuForm;
 
 namespace GUI.ManHinhChucNang
 {

@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.btnBaoCaoDocGiaNoTienPhat = new System.Windows.Forms.Button();
             this.timerAnimation = new System.Windows.Forms.Timer(this.components);
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTiepNhanNhanVien = new System.Windows.Forms.Button();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLapTheDocGia = new System.Windows.Forms.Button();
-            this.btnBaoCaoDocGiaNoTienPhat = new System.Windows.Forms.Button();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnTiepNhanSachMoi = new System.Windows.Forms.Button();
-            this.btnBaoCaoSachTraTre = new System.Windows.Forms.Button();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnTraCuuSach = new System.Windows.Forms.Button();
-            this.btnBaoCaoTheoTheLoai = new System.Windows.Forms.Button();
+            this.btnBaoCaoSachTraTre = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnChoMuonSach = new System.Windows.Forms.Button();
-            this.btnThanhLySach = new System.Windows.Forms.Button();
+            this.btnBaoCaoTheoTheLoai = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnNhanTraSach = new System.Windows.Forms.Button();
+            this.btnThanhLySach = new System.Windows.Forms.Button();
             this.btnGhiNhanMatSach = new System.Windows.Forms.Button();
-            this.btnLapPhieuThuTienPhat = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnLapPhieuThuTienPhat = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.flpnChucNangChinh = new System.Windows.Forms.FlowLayoutPanel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnTopMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,35 +70,48 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
             this.flpnChucNangChinh.SuspendLayout();
             this.panel13.SuspendLayout();
             this.pnTopMain.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btnBaoCaoDocGiaNoTienPhat
+            // 
+            this.btnBaoCaoDocGiaNoTienPhat.BackColor = System.Drawing.Color.White;
+            this.btnBaoCaoDocGiaNoTienPhat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBaoCaoDocGiaNoTienPhat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBaoCaoDocGiaNoTienPhat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBaoCaoDocGiaNoTienPhat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnBaoCaoDocGiaNoTienPhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoDocGiaNoTienPhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCaoDocGiaNoTienPhat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBaoCaoDocGiaNoTienPhat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBaoCaoDocGiaNoTienPhat.Location = new System.Drawing.Point(0, 0);
+            this.btnBaoCaoDocGiaNoTienPhat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBaoCaoDocGiaNoTienPhat.Name = "btnBaoCaoDocGiaNoTienPhat";
+            this.btnBaoCaoDocGiaNoTienPhat.Size = new System.Drawing.Size(204, 111);
+            this.btnBaoCaoDocGiaNoTienPhat.TabIndex = 1;
+            this.btnBaoCaoDocGiaNoTienPhat.Text = "Báo cáo đọc giả nợ tiền phạt";
+            this.btnBaoCaoDocGiaNoTienPhat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBaoCaoDocGiaNoTienPhat.UseVisualStyleBackColor = false;
+            this.btnBaoCaoDocGiaNoTienPhat.Click += new System.EventHandler(this.btnBaoCaoDocGiaNoTienPhat_Click);
+            // 
             // timerAnimation
             // 
             this.timerAnimation.Interval = 5;
+            this.timerAnimation.Tick += new System.EventHandler(this.timerAnimation_Tick);
             // 
-            // flowLayoutPanel4
+            // flowLayoutPanel2
             // 
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(29, 379);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(849, 27);
-            this.flowLayoutPanel4.TabIndex = 3;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(29, 406);
-            this.flowLayoutPanel3.TabIndex = 2;
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(878, 0);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(29, 406);
+            this.flowLayoutPanel2.TabIndex = 1;
             // 
             // panel1
             // 
@@ -131,15 +144,16 @@
             this.btnTiepNhanNhanVien.Text = "Tiếp nhận nhân viên";
             this.btnTiepNhanNhanVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTiepNhanNhanVien.UseVisualStyleBackColor = false;
+            this.btnTiepNhanNhanVien.Click += new System.EventHandler(this.btnTiepNhanNhanVien_Click);
             // 
-            // flowLayoutPanel5
+            // flowLayoutPanel3
             // 
-            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(29, 0);
-            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(849, 27);
-            this.flowLayoutPanel5.TabIndex = 3;
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(29, 406);
+            this.flowLayoutPanel3.TabIndex = 2;
             // 
             // panel2
             // 
@@ -171,26 +185,16 @@
             this.btnLapTheDocGia.Text = "Lập thẻ đọc giả";
             this.btnLapTheDocGia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLapTheDocGia.UseVisualStyleBackColor = false;
+            this.btnLapTheDocGia.Click += new System.EventHandler(this.btnLapTheDocGia_Click);
             // 
-            // btnBaoCaoDocGiaNoTienPhat
+            // flowLayoutPanel4
             // 
-            this.btnBaoCaoDocGiaNoTienPhat.BackColor = System.Drawing.Color.White;
-            this.btnBaoCaoDocGiaNoTienPhat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBaoCaoDocGiaNoTienPhat.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBaoCaoDocGiaNoTienPhat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnBaoCaoDocGiaNoTienPhat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnBaoCaoDocGiaNoTienPhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCaoDocGiaNoTienPhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCaoDocGiaNoTienPhat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBaoCaoDocGiaNoTienPhat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBaoCaoDocGiaNoTienPhat.Location = new System.Drawing.Point(0, 0);
-            this.btnBaoCaoDocGiaNoTienPhat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBaoCaoDocGiaNoTienPhat.Name = "btnBaoCaoDocGiaNoTienPhat";
-            this.btnBaoCaoDocGiaNoTienPhat.Size = new System.Drawing.Size(204, 111);
-            this.btnBaoCaoDocGiaNoTienPhat.TabIndex = 1;
-            this.btnBaoCaoDocGiaNoTienPhat.Text = "Báo cáo đọc giả nợ tiền phạt";
-            this.btnBaoCaoDocGiaNoTienPhat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBaoCaoDocGiaNoTienPhat.UseVisualStyleBackColor = false;
+            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(29, 379);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(849, 27);
+            this.flowLayoutPanel4.TabIndex = 3;
             // 
             // panel3
             // 
@@ -222,26 +226,16 @@
             this.btnTiepNhanSachMoi.Text = "Tiếp nhận sách mới";
             this.btnTiepNhanSachMoi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTiepNhanSachMoi.UseVisualStyleBackColor = false;
+            this.btnTiepNhanSachMoi.Click += new System.EventHandler(this.btnTiepNhanSachMoi_Click);
             // 
-            // btnBaoCaoSachTraTre
+            // flowLayoutPanel5
             // 
-            this.btnBaoCaoSachTraTre.BackColor = System.Drawing.Color.White;
-            this.btnBaoCaoSachTraTre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBaoCaoSachTraTre.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBaoCaoSachTraTre.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnBaoCaoSachTraTre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnBaoCaoSachTraTre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCaoSachTraTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCaoSachTraTre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBaoCaoSachTraTre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBaoCaoSachTraTre.Location = new System.Drawing.Point(0, 0);
-            this.btnBaoCaoSachTraTre.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBaoCaoSachTraTre.Name = "btnBaoCaoSachTraTre";
-            this.btnBaoCaoSachTraTre.Size = new System.Drawing.Size(204, 111);
-            this.btnBaoCaoSachTraTre.TabIndex = 1;
-            this.btnBaoCaoSachTraTre.Text = "Báo cáo sách trả trễ";
-            this.btnBaoCaoSachTraTre.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBaoCaoSachTraTre.UseVisualStyleBackColor = false;
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(29, 0);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(849, 27);
+            this.flowLayoutPanel5.TabIndex = 3;
             // 
             // panel4
             // 
@@ -273,26 +267,28 @@
             this.btnTraCuuSach.Text = "Tra cứu sách";
             this.btnTraCuuSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTraCuuSach.UseVisualStyleBackColor = false;
+            this.btnTraCuuSach.Click += new System.EventHandler(this.btnTraCuuSach_Click);
             // 
-            // btnBaoCaoTheoTheLoai
+            // btnBaoCaoSachTraTre
             // 
-            this.btnBaoCaoTheoTheLoai.BackColor = System.Drawing.Color.White;
-            this.btnBaoCaoTheoTheLoai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBaoCaoTheoTheLoai.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBaoCaoTheoTheLoai.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnBaoCaoTheoTheLoai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnBaoCaoTheoTheLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCaoTheoTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCaoTheoTheLoai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBaoCaoTheoTheLoai.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBaoCaoTheoTheLoai.Location = new System.Drawing.Point(0, 0);
-            this.btnBaoCaoTheoTheLoai.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBaoCaoTheoTheLoai.Name = "btnBaoCaoTheoTheLoai";
-            this.btnBaoCaoTheoTheLoai.Size = new System.Drawing.Size(204, 111);
-            this.btnBaoCaoTheoTheLoai.TabIndex = 1;
-            this.btnBaoCaoTheoTheLoai.Text = "Báo cáo mượn sách theo thể loại";
-            this.btnBaoCaoTheoTheLoai.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBaoCaoTheoTheLoai.UseVisualStyleBackColor = false;
+            this.btnBaoCaoSachTraTre.BackColor = System.Drawing.Color.White;
+            this.btnBaoCaoSachTraTre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBaoCaoSachTraTre.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBaoCaoSachTraTre.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBaoCaoSachTraTre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnBaoCaoSachTraTre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoSachTraTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCaoSachTraTre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBaoCaoSachTraTre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBaoCaoSachTraTre.Location = new System.Drawing.Point(0, 0);
+            this.btnBaoCaoSachTraTre.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBaoCaoSachTraTre.Name = "btnBaoCaoSachTraTre";
+            this.btnBaoCaoSachTraTre.Size = new System.Drawing.Size(204, 111);
+            this.btnBaoCaoSachTraTre.TabIndex = 1;
+            this.btnBaoCaoSachTraTre.Text = "Báo cáo sách trả trễ";
+            this.btnBaoCaoSachTraTre.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBaoCaoSachTraTre.UseVisualStyleBackColor = false;
+            this.btnBaoCaoSachTraTre.Click += new System.EventHandler(this.btnBaoCaoSachTraTre_Click);
             // 
             // panel5
             // 
@@ -324,26 +320,28 @@
             this.btnChoMuonSach.Text = "Cho mượn sách";
             this.btnChoMuonSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnChoMuonSach.UseVisualStyleBackColor = false;
+            this.btnChoMuonSach.Click += new System.EventHandler(this.btnChoMuonSach_Click);
             // 
-            // btnThanhLySach
+            // btnBaoCaoTheoTheLoai
             // 
-            this.btnThanhLySach.BackColor = System.Drawing.Color.White;
-            this.btnThanhLySach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThanhLySach.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnThanhLySach.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnThanhLySach.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnThanhLySach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhLySach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhLySach.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnThanhLySach.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnThanhLySach.Location = new System.Drawing.Point(0, 0);
-            this.btnThanhLySach.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThanhLySach.Name = "btnThanhLySach";
-            this.btnThanhLySach.Size = new System.Drawing.Size(204, 111);
-            this.btnThanhLySach.TabIndex = 1;
-            this.btnThanhLySach.Text = "Thanh lý sách";
-            this.btnThanhLySach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnThanhLySach.UseVisualStyleBackColor = false;
+            this.btnBaoCaoTheoTheLoai.BackColor = System.Drawing.Color.White;
+            this.btnBaoCaoTheoTheLoai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBaoCaoTheoTheLoai.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBaoCaoTheoTheLoai.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBaoCaoTheoTheLoai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnBaoCaoTheoTheLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoTheoTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCaoTheoTheLoai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBaoCaoTheoTheLoai.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBaoCaoTheoTheLoai.Location = new System.Drawing.Point(0, 0);
+            this.btnBaoCaoTheoTheLoai.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBaoCaoTheoTheLoai.Name = "btnBaoCaoTheoTheLoai";
+            this.btnBaoCaoTheoTheLoai.Size = new System.Drawing.Size(204, 111);
+            this.btnBaoCaoTheoTheLoai.TabIndex = 1;
+            this.btnBaoCaoTheoTheLoai.Text = "Báo cáo mượn sách theo thể loại";
+            this.btnBaoCaoTheoTheLoai.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBaoCaoTheoTheLoai.UseVisualStyleBackColor = false;
+            this.btnBaoCaoTheoTheLoai.Click += new System.EventHandler(this.btnBaoCaoTheoTheLoai_Click);
             // 
             // panel6
             // 
@@ -375,6 +373,28 @@
             this.btnNhanTraSach.Text = "Nhận trả sách";
             this.btnNhanTraSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNhanTraSach.UseVisualStyleBackColor = false;
+            this.btnNhanTraSach.Click += new System.EventHandler(this.btnNhanTraSach_Click);
+            // 
+            // btnThanhLySach
+            // 
+            this.btnThanhLySach.BackColor = System.Drawing.Color.White;
+            this.btnThanhLySach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThanhLySach.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnThanhLySach.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnThanhLySach.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnThanhLySach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhLySach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhLySach.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnThanhLySach.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThanhLySach.Location = new System.Drawing.Point(0, 0);
+            this.btnThanhLySach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThanhLySach.Name = "btnThanhLySach";
+            this.btnThanhLySach.Size = new System.Drawing.Size(204, 111);
+            this.btnThanhLySach.TabIndex = 1;
+            this.btnThanhLySach.Text = "Thanh lý sách";
+            this.btnThanhLySach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThanhLySach.UseVisualStyleBackColor = false;
+            this.btnThanhLySach.Click += new System.EventHandler(this.btnThanhLySach_Click);
             // 
             // btnGhiNhanMatSach
             // 
@@ -395,6 +415,18 @@
             this.btnGhiNhanMatSach.Text = "Ghi nhận mất sách";
             this.btnGhiNhanMatSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGhiNhanMatSach.UseVisualStyleBackColor = false;
+            this.btnGhiNhanMatSach.Click += new System.EventHandler(this.btnGhiNhanMatSach_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.btnLapPhieuThuTienPhat);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(428, 123);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(204, 111);
+            this.panel7.TabIndex = 1;
             // 
             // btnLapPhieuThuTienPhat
             // 
@@ -415,17 +447,7 @@
             this.btnLapPhieuThuTienPhat.Text = "Phiếu thu tiền phạt";
             this.btnLapPhieuThuTienPhat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLapPhieuThuTienPhat.UseVisualStyleBackColor = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.btnLapPhieuThuTienPhat);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(428, 123);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(204, 111);
-            this.panel7.TabIndex = 1;
+            this.btnLapPhieuThuTienPhat.Click += new System.EventHandler(this.btnLapPhieuThuTienPhat_Click);
             // 
             // panel8
             // 
@@ -449,6 +471,17 @@
             this.panel9.Size = new System.Drawing.Size(204, 111);
             this.panel9.TabIndex = 1;
             // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.btnBaoCaoDocGiaNoTienPhat);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(640, 242);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(204, 111);
+            this.panel12.TabIndex = 1;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
@@ -471,17 +504,6 @@
             this.panel11.Size = new System.Drawing.Size(204, 111);
             this.panel11.TabIndex = 1;
             // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.btnBaoCaoDocGiaNoTienPhat);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(640, 242);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(204, 111);
-            this.panel12.TabIndex = 1;
-            // 
             // flpnChucNangChinh
             // 
             this.flpnChucNangChinh.BackColor = System.Drawing.SystemColors.Control;
@@ -502,6 +524,7 @@
             this.flpnChucNangChinh.Name = "flpnChucNangChinh";
             this.flpnChucNangChinh.Size = new System.Drawing.Size(848, 352);
             this.flpnChucNangChinh.TabIndex = 1;
+            this.flpnChucNangChinh.SizeChanged += new System.EventHandler(this.flpnChucNangChinh_SizeChanged);
             // 
             // panel13
             // 
@@ -513,15 +536,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(849, 352);
             this.panel13.TabIndex = 4;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(878, 0);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(29, 406);
-            this.flowLayoutPanel2.TabIndex = 1;
+            this.panel13.SizeChanged += new System.EventHandler(this.panel13_SizeChanged);
             // 
             // pnTopMain
             // 
@@ -543,7 +558,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnTopMain);
             this.Name = "MainForm";
-            this.Size = new System.Drawing.Size(907, 403);
+            this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -553,9 +569,9 @@
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
             this.flpnChucNangChinh.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.pnTopMain.ResumeLayout(false);
@@ -565,37 +581,37 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btnBaoCaoDocGiaNoTienPhat;
         private System.Windows.Forms.Timer timerAnimation;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnTiepNhanNhanVien;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnLapTheDocGia;
-        private System.Windows.Forms.Button btnBaoCaoDocGiaNoTienPhat;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnTiepNhanSachMoi;
-        private System.Windows.Forms.Button btnBaoCaoSachTraTre;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnTraCuuSach;
-        private System.Windows.Forms.Button btnBaoCaoTheoTheLoai;
+        private System.Windows.Forms.Button btnBaoCaoSachTraTre;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnChoMuonSach;
-        private System.Windows.Forms.Button btnThanhLySach;
+        private System.Windows.Forms.Button btnBaoCaoTheoTheLoai;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnNhanTraSach;
+        private System.Windows.Forms.Button btnThanhLySach;
         private System.Windows.Forms.Button btnGhiNhanMatSach;
-        private System.Windows.Forms.Button btnLapPhieuThuTienPhat;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnLapPhieuThuTienPhat;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.FlowLayoutPanel flpnChucNangChinh;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel pnTopMain;
     }
 }

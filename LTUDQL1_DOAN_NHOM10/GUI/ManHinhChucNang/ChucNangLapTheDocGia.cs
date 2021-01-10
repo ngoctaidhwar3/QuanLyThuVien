@@ -82,7 +82,7 @@ namespace GUI.ManHinhChucNang
                 docGia.Email = txtEmail.Text;
                 docGia.TTDG = "TTDG01";
                 docGia.MaLoaiDG = cbbLoaiDocGia.SelectedValue.ToString();
-                docGia.NVLapThe = cbbMaNhanVien.SelectedValue.ToString();
+                docGia.NvLapThe = cbbMaNhanVien.SelectedValue.ToString();
                 docGia.NgayLapThe = dtpNgayTiepNhan.Value.ToString("MM/dd/yyyy").Substring(0, 10);
                 docGia.TongNo = 0;
                 QuyDinhBUS quyDinhBUS = new QuyDinhBUS();

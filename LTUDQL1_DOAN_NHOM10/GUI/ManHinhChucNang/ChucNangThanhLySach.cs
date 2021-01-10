@@ -36,7 +36,25 @@ namespace GUI.ManHinhChucNang
             LoadDataNhanVien();
         }
 
+        private void LoadDataNhanVien()
+        {
+            NhanVienBUS nhanVienBUS = new NhanVienBUS();
+            dtNhanVien = nhanVienBUS.LayDanhSachNhanVienTheoBoPhan("BP03");
 
+            cbbNhanVien.DataSource = dtNhanVien;
+            cbbNhanVien.DisplayMember = "HoTenNV";
+            cbbNhanVien.ValueMember = "MaNhanVien";
+
+            for (int i = 0; i < dtNhanVien.Rows.Count; i++)
+            {
+                if (cbbNhanVien.SelectedValue.ToString() == dtNhanVien.Rows[i][0].ToString())
+                {
+
+                    txtNgaySinh.Text = dtNhanVien.Rows[0]["NgaySinh"].ToString();
+                }
+            }
+
+        }
 
         private void LoadMaPhieuThanhLy()
         {
@@ -46,7 +64,7 @@ namespace GUI.ManHinhChucNang
             txtMaPhieu.Text = MaMoi;
         }
 
-        
+
 
         private void dgvChiTietPhieuThanhLy_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
@@ -71,7 +89,7 @@ namespace GUI.ManHinhChucNang
 
         private void LoadThongTinSach(int Rowindex, int Colindex)
         {
-            
+
             if (dgvChiTietPhieuThanhLy.Rows[Rowindex].Cells[1].Value == null)
             {
                 BeginInvoke(new MethodInvoker(delegate
@@ -86,7 +104,7 @@ namespace GUI.ManHinhChucNang
             string MaSach = dgvChiTietPhieuThanhLy[Colindex, Rowindex].Value.ToString();
 
 
-           
+
             if (KiemTraTrungMaSach(MaSach, Rowindex))
             {
                 MessageBox.Show("Mã sách đã được nhập");
@@ -130,7 +148,7 @@ namespace GUI.ManHinhChucNang
 
         private void dgvChiTietPhieuThanhLy_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
-            dgvChiTietPhieuThanhLy[0, e.RowIndex].Value = dgvChiTietPhieuThanhLy.Rows.Count; 
+            dgvChiTietPhieuThanhLy[0, e.RowIndex].Value = dgvChiTietPhieuThanhLy.Rows.Count;
 
             LoadLyDoThanhLy(e.RowIndex);
         }
@@ -140,6 +158,7 @@ namespace GUI.ManHinhChucNang
         {
             LoadLyDoThanhLy(0);
             dgvChiTietPhieuThanhLy[0, 0].Value = dgvChiTietPhieuThanhLy.Rows.Count;
+        }
 
         private void LoadLyDoThanhLy(int i)
         {
@@ -147,7 +166,8 @@ namespace GUI.ManHinhChucNang
             DataTable dtDSLyDo = quanLyThanhLySachBUS.LayDanhSachLyDoThanhLy();
             dtDSLyDo.Columns["MoTa"].DefaultValue = "Mất";
 
-            var CellLyDoThanhLy = (DataGridViewComboBoxCell)dgvChiTietPhieuThanhLy.Rows[i].Cells[2].
+            var CellLyDoThanhLy = (DataGridViewComboBoxCell)dgvChiTietPhieuThanhLy.Rows[i].Cells[2];
+            CellLyDoThanhLy.DataSource = dtDSLyDo;
             CellLyDoThanhLy.DisplayMember = "MoTa";
             CellLyDoThanhLy.ValueMember = "MaLyDoThanhLy";
             CellLyDoThanhLy.Value = dtDSLyDo.Rows[0]["MaLyDoThanhLy"];
@@ -159,26 +179,7 @@ namespace GUI.ManHinhChucNang
             CapNhatSTT();
         }
 
-        private void LoadDataNhanVien()
-        {
-            NhanVienBUS nhanVienBUS = new NhanVienBUS();
-            dtNhanVien = nhanVienBUS.LayDanhSachNhanVienTheoBoPhan("BP03");
-
-            cbbNhanVien.DataSource = dtNhanVien;
-            cbbNhanVien.DisplayMember = "HoTenNV";
-            cbbNhanVien.ValueMember = "MaNhanVien";
-
-            for (int i = 0; i < dtNhanVien.Rows.Count; i++)
-            {
-                if (cbbNhanVien.SelectedValue.ToString() == dtNhanVien.Rows[i][0].ToString())
-                {
-
-                    txtNgaySinh.Text = dtNhanVien.Rows[0]["NgaySinh"].ToString();
-                }
-            }
-
-        }
-
+        
         private void LamMoiForm()
         {
             dgvChiTietPhieuThanhLy.Rows.Clear();
@@ -186,10 +187,10 @@ namespace GUI.ManHinhChucNang
             LoadDataChiTietThanhLy();
         }
 
-        
+
         private void btnHoanTat_Click(object sender, EventArgs e)
         {
-            
+
             PhieuThanhLySachDTO phieuThanhLySachDTO = new PhieuThanhLySachDTO();
             phieuThanhLySachDTO.MaPhieuthanhLy = txtMaPhieu.Text;
             phieuThanhLySachDTO.MaNV = cbbNhanVien.SelectedValue.ToString();

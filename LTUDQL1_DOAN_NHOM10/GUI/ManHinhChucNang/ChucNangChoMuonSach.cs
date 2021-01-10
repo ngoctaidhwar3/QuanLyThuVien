@@ -29,10 +29,7 @@ namespace GUI.ManHinhChucNang
             this.ChuyenTrang = ChuyenTrang;
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.ChuyenTrang(0);
-        }
+        
 
         private void ManHinhChucNangChoMuonSach_Load(object sender, EventArgs e)
         {
@@ -254,6 +251,11 @@ namespace GUI.ManHinhChucNang
             {
                 dtgrvPM.AllowUserToAddRows = true;
             }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.ChuyenTrang(0);
         }
     }
 }

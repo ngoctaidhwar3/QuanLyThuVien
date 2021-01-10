@@ -11,8 +11,8 @@ namespace DAO
 {
     public class SachDAO
     {
-        Provider provider = new Provider();
-        public bool WasExistBookId(string bookId)
+        static Provider provider = new Provider();
+        public static bool WasExistBookId(string bookId)
         {
             provider.Connect();
             try
@@ -30,7 +30,7 @@ namespace DAO
                 provider.DisConnect();
             }
         }
-        public DataTable GetDatasByCommand(string cmd)
+        public static DataTable GetDatasByCommand(string cmd)
         { 
             try
             {
@@ -48,7 +48,7 @@ namespace DAO
             }
         }
 
-        public DataTable GetDatasByStoredProcedure(string cmd)
+        public static DataTable GetDatasByStoredProcedure(string cmd)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace DAO
         }
 
        
-        public int AddANewBook(Sach book)
+        public static int AddANewBook(Sach book)
         {
             int nRow = 0;
             try
@@ -101,7 +101,7 @@ namespace DAO
             return nRow;
         }
 
-        public DataTable FindBook(Sach book)
+        public static DataTable FindBook(Sach book)
         {
             try
             {

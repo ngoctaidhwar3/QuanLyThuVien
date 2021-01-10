@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnChucNangSach = new System.Windows.Forms.Panel();
-            this.btnItemTiepNhanSachMoi = new System.Windows.Forms.Button();
-            this.btnItemTraCuuSach = new System.Windows.Forms.Button();
-            this.btnItemChoMuonSach = new System.Windows.Forms.Button();
-            this.btnItemNhanTraSach = new System.Windows.Forms.Button();
-            this.btnItemGhiNhanMatSach = new System.Windows.Forms.Button();
             this.btnItemThanhLySach = new System.Windows.Forms.Button();
+            this.btnItemGhiNhanMatSach = new System.Windows.Forms.Button();
+            this.btnItemNhanTraSach = new System.Windows.Forms.Button();
+            this.btnItemChoMuonSach = new System.Windows.Forms.Button();
+            this.btnItemTraCuuSach = new System.Windows.Forms.Button();
+            this.btnItemTiepNhanSachMoi = new System.Windows.Forms.Button();
             this.timerAnimationSlide = new System.Windows.Forms.Timer(this.components);
             this.pnChucNangSach.SuspendLayout();
             this.SuspendLayout();
@@ -54,53 +54,17 @@
             this.pnChucNangSach.Size = new System.Drawing.Size(247, 578);
             this.pnChucNangSach.TabIndex = 0;
             // 
-            // btnItemTiepNhanSachMoi
+            // btnItemThanhLySach
             // 
-            this.btnItemTiepNhanSachMoi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemTiepNhanSachMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemTiepNhanSachMoi.Location = new System.Drawing.Point(0, 0);
-            this.btnItemTiepNhanSachMoi.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemTiepNhanSachMoi.Name = "btnItemTiepNhanSachMoi";
-            this.btnItemTiepNhanSachMoi.Size = new System.Drawing.Size(247, 74);
-            this.btnItemTiepNhanSachMoi.TabIndex = 15;
-            this.btnItemTiepNhanSachMoi.Text = "Tiếp Nhận Sách Mới";
-            this.btnItemTiepNhanSachMoi.UseVisualStyleBackColor = true;
-            // 
-            // btnItemTraCuuSach
-            // 
-            this.btnItemTraCuuSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemTraCuuSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemTraCuuSach.Location = new System.Drawing.Point(0, 74);
-            this.btnItemTraCuuSach.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemTraCuuSach.Name = "btnItemTraCuuSach";
-            this.btnItemTraCuuSach.Size = new System.Drawing.Size(247, 74);
-            this.btnItemTraCuuSach.TabIndex = 16;
-            this.btnItemTraCuuSach.Text = "Tra Cứu Sách";
-            this.btnItemTraCuuSach.UseVisualStyleBackColor = true;
-            // 
-            // btnItemChoMuonSach
-            // 
-            this.btnItemChoMuonSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemChoMuonSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemChoMuonSach.Location = new System.Drawing.Point(0, 148);
-            this.btnItemChoMuonSach.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemChoMuonSach.Name = "btnItemChoMuonSach";
-            this.btnItemChoMuonSach.Size = new System.Drawing.Size(247, 74);
-            this.btnItemChoMuonSach.TabIndex = 17;
-            this.btnItemChoMuonSach.Text = "Cho Mượn Sách";
-            this.btnItemChoMuonSach.UseVisualStyleBackColor = true;
-            // 
-            // btnItemNhanTraSach
-            // 
-            this.btnItemNhanTraSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemNhanTraSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemNhanTraSach.Location = new System.Drawing.Point(0, 222);
-            this.btnItemNhanTraSach.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemNhanTraSach.Name = "btnItemNhanTraSach";
-            this.btnItemNhanTraSach.Size = new System.Drawing.Size(247, 74);
-            this.btnItemNhanTraSach.TabIndex = 18;
-            this.btnItemNhanTraSach.Text = "Nhận Trả Sách";
-            this.btnItemNhanTraSach.UseVisualStyleBackColor = true;
+            this.btnItemThanhLySach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemThanhLySach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemThanhLySach.Location = new System.Drawing.Point(0, 370);
+            this.btnItemThanhLySach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemThanhLySach.Name = "btnItemThanhLySach";
+            this.btnItemThanhLySach.Size = new System.Drawing.Size(247, 74);
+            this.btnItemThanhLySach.TabIndex = 20;
+            this.btnItemThanhLySach.Text = "Thanh Lý Sách";
+            this.btnItemThanhLySach.UseVisualStyleBackColor = true;
             // 
             // btnItemGhiNhanMatSach
             // 
@@ -114,17 +78,54 @@
             this.btnItemGhiNhanMatSach.Text = "Ghi Nhận Mất Sách";
             this.btnItemGhiNhanMatSach.UseVisualStyleBackColor = true;
             // 
-            // btnItemThanhLySach
+            // btnItemNhanTraSach
             // 
-            this.btnItemThanhLySach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemThanhLySach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemThanhLySach.Location = new System.Drawing.Point(0, 370);
-            this.btnItemThanhLySach.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemThanhLySach.Name = "btnItemThanhLySach";
-            this.btnItemThanhLySach.Size = new System.Drawing.Size(247, 74);
-            this.btnItemThanhLySach.TabIndex = 20;
-            this.btnItemThanhLySach.Text = "Thanh Lý Sách";
-            this.btnItemThanhLySach.UseVisualStyleBackColor = true;
+            this.btnItemNhanTraSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemNhanTraSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemNhanTraSach.Location = new System.Drawing.Point(0, 222);
+            this.btnItemNhanTraSach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemNhanTraSach.Name = "btnItemNhanTraSach";
+            this.btnItemNhanTraSach.Size = new System.Drawing.Size(247, 74);
+            this.btnItemNhanTraSach.TabIndex = 18;
+            this.btnItemNhanTraSach.Text = "Nhận Trả Sách";
+            this.btnItemNhanTraSach.UseVisualStyleBackColor = true;
+            // 
+            // btnItemChoMuonSach
+            // 
+            this.btnItemChoMuonSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemChoMuonSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemChoMuonSach.Location = new System.Drawing.Point(0, 148);
+            this.btnItemChoMuonSach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemChoMuonSach.Name = "btnItemChoMuonSach";
+            this.btnItemChoMuonSach.Size = new System.Drawing.Size(247, 74);
+            this.btnItemChoMuonSach.TabIndex = 17;
+            this.btnItemChoMuonSach.Text = "Cho Mượn Sách";
+            this.btnItemChoMuonSach.UseVisualStyleBackColor = true;
+            this.btnItemChoMuonSach.Click += new System.EventHandler(this.btnItemChoMuonSach_Click);
+            // 
+            // btnItemTraCuuSach
+            // 
+            this.btnItemTraCuuSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemTraCuuSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemTraCuuSach.Location = new System.Drawing.Point(0, 74);
+            this.btnItemTraCuuSach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemTraCuuSach.Name = "btnItemTraCuuSach";
+            this.btnItemTraCuuSach.Size = new System.Drawing.Size(247, 74);
+            this.btnItemTraCuuSach.TabIndex = 16;
+            this.btnItemTraCuuSach.Text = "Tra Cứu Sách";
+            this.btnItemTraCuuSach.UseVisualStyleBackColor = true;
+            // 
+            // btnItemTiepNhanSachMoi
+            // 
+            this.btnItemTiepNhanSachMoi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemTiepNhanSachMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemTiepNhanSachMoi.Location = new System.Drawing.Point(0, 0);
+            this.btnItemTiepNhanSachMoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemTiepNhanSachMoi.Name = "btnItemTiepNhanSachMoi";
+            this.btnItemTiepNhanSachMoi.Size = new System.Drawing.Size(247, 74);
+            this.btnItemTiepNhanSachMoi.TabIndex = 15;
+            this.btnItemTiepNhanSachMoi.Text = "Tiếp Nhận Sách Mới";
+            this.btnItemTiepNhanSachMoi.UseVisualStyleBackColor = true;
             // 
             // timerAnimationSlide
             // 

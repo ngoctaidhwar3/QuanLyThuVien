@@ -85,7 +85,6 @@
             // 
             // txtTenTTS
             // 
-            this.txtTenTTS.BackColor = System.Drawing.SystemColors.Control;
             this.txtTenTTS.Location = new System.Drawing.Point(765, 616);
             this.txtTenTTS.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenTTS.Name = "txtTenTTS";
@@ -121,6 +120,7 @@
             this.btnSuaTinhTrang.TabIndex = 78;
             this.btnSuaTinhTrang.Text = "Sửa tình trạng";
             this.btnSuaTinhTrang.UseVisualStyleBackColor = true;
+            this.btnSuaTinhTrang.Click += new System.EventHandler(this.btnSuaTinhTrang_Click);
             // 
             // btnXoaTinhTrang
             // 
@@ -131,6 +131,7 @@
             this.btnXoaTinhTrang.TabIndex = 77;
             this.btnXoaTinhTrang.Text = "Xóa tình trạng";
             this.btnXoaTinhTrang.UseVisualStyleBackColor = true;
+            this.btnXoaTinhTrang.Click += new System.EventHandler(this.btnXoaTinhTrang_Click);
             // 
             // btnThemTinhTrang
             // 
@@ -141,6 +142,7 @@
             this.btnThemTinhTrang.TabIndex = 76;
             this.btnThemTinhTrang.Text = "Thêm tình trạng";
             this.btnThemTinhTrang.UseVisualStyleBackColor = true;
+            this.btnThemTinhTrang.Click += new System.EventHandler(this.btnThemTinhTrang_Click);
             // 
             // label14
             // 
@@ -180,6 +182,7 @@
             this.dtgridviewTTS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgridviewTTS.Size = new System.Drawing.Size(285, 255);
             this.dtgridviewTTS.TabIndex = 73;
+            this.dtgridviewTTS.SelectionChanged += new System.EventHandler(this.dtgridviewTTS_SelectionChanged);
             // 
             // MaTTSach
             // 
@@ -200,17 +203,16 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(461, 360);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(125, 20);
+            this.label16.Size = new System.Drawing.Size(140, 20);
             this.label16.TabIndex = 72;
             this.label16.Text = "Tình trạng sách";
             // 
             // txtTenNXB
             // 
-            this.txtTenNXB.BackColor = System.Drawing.SystemColors.Control;
             this.txtTenNXB.Location = new System.Drawing.Point(315, 616);
             this.txtTenNXB.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNXB.Name = "txtTenNXB";
@@ -246,6 +248,7 @@
             this.btnSuaNXB.TabIndex = 68;
             this.btnSuaNXB.Text = "Sửa NXB";
             this.btnSuaNXB.UseVisualStyleBackColor = true;
+            this.btnSuaNXB.Click += new System.EventHandler(this.btnSuaNXB_Click);
             // 
             // btnXoaNXB
             // 
@@ -256,6 +259,7 @@
             this.btnXoaNXB.TabIndex = 67;
             this.btnXoaNXB.Text = "Xóa NXB";
             this.btnXoaNXB.UseVisualStyleBackColor = true;
+            this.btnXoaNXB.Click += new System.EventHandler(this.btnXoaNXB_Click);
             // 
             // btnThemNXB
             // 
@@ -266,6 +270,7 @@
             this.btnThemNXB.TabIndex = 66;
             this.btnThemNXB.Text = "Thêm NXB";
             this.btnThemNXB.UseVisualStyleBackColor = true;
+            this.btnThemNXB.Click += new System.EventHandler(this.btnThemNXB_Click);
             // 
             // label10
             // 
@@ -305,6 +310,7 @@
             this.dtgridviewNXB.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgridviewNXB.Size = new System.Drawing.Size(285, 255);
             this.dtgridviewNXB.TabIndex = 63;
+            this.dtgridviewNXB.SelectionChanged += new System.EventHandler(this.dtgridviewNXB_SelectionChanged);
             // 
             // MaNXB
             // 
@@ -325,17 +331,16 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(11, 360);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(107, 20);
+            this.label12.Size = new System.Drawing.Size(119, 20);
             this.label12.TabIndex = 62;
             this.label12.Text = "Nhà xuất bản";
             // 
             // txtTenTG
             // 
-            this.txtTenTG.BackColor = System.Drawing.SystemColors.Control;
             this.txtTenTG.Location = new System.Drawing.Point(765, 330);
             this.txtTenTG.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenTG.Name = "txtTenTG";
@@ -371,6 +376,7 @@
             this.btnSuaTacGia.TabIndex = 58;
             this.btnSuaTacGia.Text = "Sửa thể loại";
             this.btnSuaTacGia.UseVisualStyleBackColor = true;
+            this.btnSuaTacGia.Click += new System.EventHandler(this.btnSuaTacGia_Click);
             // 
             // btnXoaTG
             // 
@@ -381,6 +387,7 @@
             this.btnXoaTG.TabIndex = 57;
             this.btnXoaTG.Text = "Xóa tác giả";
             this.btnXoaTG.UseVisualStyleBackColor = true;
+            this.btnXoaTG.Click += new System.EventHandler(this.btnXoaTG_Click);
             // 
             // btnThemTacGia
             // 
@@ -391,6 +398,7 @@
             this.btnThemTacGia.TabIndex = 56;
             this.btnThemTacGia.Text = "Thêm tác giả";
             this.btnThemTacGia.UseVisualStyleBackColor = true;
+            this.btnThemTacGia.Click += new System.EventHandler(this.btnThemTacGia_Click);
             // 
             // label6
             // 
@@ -430,6 +438,7 @@
             this.dtgridviewTacGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgridviewTacGia.Size = new System.Drawing.Size(285, 255);
             this.dtgridviewTacGia.TabIndex = 53;
+            this.dtgridviewTacGia.SelectionChanged += new System.EventHandler(this.dtgridviewTacGia_SelectionChanged);
             // 
             // MaTacGia
             // 
@@ -450,17 +459,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(461, 74);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 20);
+            this.label8.Size = new System.Drawing.Size(71, 20);
             this.label8.TabIndex = 52;
             this.label8.Text = "Tác giả";
             // 
             // txtTenTheLoai
             // 
-            this.txtTenTheLoai.BackColor = System.Drawing.SystemColors.Control;
             this.txtTenTheLoai.Location = new System.Drawing.Point(315, 330);
             this.txtTenTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenTheLoai.Name = "txtTenTheLoai";
@@ -496,6 +504,7 @@
             this.btnSuaTheLoai.TabIndex = 48;
             this.btnSuaTheLoai.Text = "Sửa thể loại";
             this.btnSuaTheLoai.UseVisualStyleBackColor = true;
+            this.btnSuaTheLoai.Click += new System.EventHandler(this.btnSuaTheLoai_Click);
             // 
             // btnXoaTL
             // 
@@ -506,6 +515,7 @@
             this.btnXoaTL.TabIndex = 47;
             this.btnXoaTL.Text = "Xóa thể loại";
             this.btnXoaTL.UseVisualStyleBackColor = true;
+            this.btnXoaTL.Click += new System.EventHandler(this.btnXoaTL_Click);
             // 
             // btnThemTheLoai
             // 
@@ -516,6 +526,7 @@
             this.btnThemTheLoai.TabIndex = 46;
             this.btnThemTheLoai.Text = "Thêm thể loại";
             this.btnThemTheLoai.UseVisualStyleBackColor = true;
+            this.btnThemTheLoai.Click += new System.EventHandler(this.btnThemTheLoai_Click);
             // 
             // label3
             // 
@@ -555,6 +566,7 @@
             this.dtgridviewTheLoaiSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgridviewTheLoaiSach.Size = new System.Drawing.Size(285, 255);
             this.dtgridviewTheLoaiSach.TabIndex = 43;
+            this.dtgridviewTheLoaiSach.SelectionChanged += new System.EventHandler(this.dtgridviewTheLoaiSach_SelectionChanged);
             // 
             // MaTheLoai
             // 
@@ -575,24 +587,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 74);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 42;
             this.label1.Text = "Thể loại sách";
             // 
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(133, 13);
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(145, 12);
             this.label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(617, 32);
+            this.label.Size = new System.Drawing.Size(559, 36);
             this.label.TabIndex = 41;
-            this.label.Text = "CẬP NHẬT CÁC BẢNG LIÊN QUAN ĐẾN SÁCH";
+            this.label.Text = "Cập nhật các bảng liên quan đến sách";
             // 
             // ManHinhChucNangCapNhatBangLienQuanSach
             // 
@@ -642,6 +654,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangCapNhatBangLienQuanSach";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangCapNhatBangLienQuanSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgridviewTTS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridviewNXB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridviewTacGia)).EndInit();

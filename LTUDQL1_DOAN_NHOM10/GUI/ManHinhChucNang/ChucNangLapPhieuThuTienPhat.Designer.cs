@@ -60,6 +60,7 @@
             this.btnHuy.TabIndex = 26;
             this.btnHuy.Text = "Thoát";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnXacNhan
             // 
@@ -71,6 +72,7 @@
             this.btnXacNhan.TabIndex = 25;
             this.btnXacNhan.Text = "Hoàn tất";
             this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // label7
             // 
@@ -202,6 +204,7 @@
             this.dgvDSDocGiaNo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSDocGiaNo.Size = new System.Drawing.Size(812, 228);
             this.dgvDSDocGiaNo.TabIndex = 12;
+            this.dgvDSDocGiaNo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSDocGiaNo_CellClick);
             // 
             // MaPT
             // 
@@ -262,6 +265,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangLapPhieuThuTienPhat";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangLapPhieuThuTienPhat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSDocGiaNo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

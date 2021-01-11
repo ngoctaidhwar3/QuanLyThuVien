@@ -93,6 +93,7 @@
             this.dgvLoaiDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLoaiDocGia.Size = new System.Drawing.Size(384, 248);
             this.dgvLoaiDocGia.TabIndex = 76;
+            this.dgvLoaiDocGia.SelectionChanged += new System.EventHandler(this.dgvLoaiDocGia_SelectionChanged);
             // 
             // MaLoaiDG
             // 
@@ -156,6 +157,7 @@
             this.btnXoaLoaiDG.TabIndex = 82;
             this.btnXoaLoaiDG.Text = "Xóa Loại Độc Giả";
             this.btnXoaLoaiDG.UseVisualStyleBackColor = true;
+            this.btnXoaLoaiDG.Click += new System.EventHandler(this.btnXoaLoaiDG_Click);
             // 
             // btnSuaLoaiDG
             // 
@@ -166,6 +168,7 @@
             this.btnSuaLoaiDG.TabIndex = 81;
             this.btnSuaLoaiDG.Text = "Sửa Loại Độc Giả";
             this.btnSuaLoaiDG.UseVisualStyleBackColor = true;
+            this.btnSuaLoaiDG.Click += new System.EventHandler(this.btnSuaLoaiDG_Click);
             // 
             // btnThemLoaiDG
             // 
@@ -176,6 +179,7 @@
             this.btnThemLoaiDG.TabIndex = 80;
             this.btnThemLoaiDG.Text = "Thêm Loại Độc Giả";
             this.btnThemLoaiDG.UseVisualStyleBackColor = true;
+            this.btnThemLoaiDG.Click += new System.EventHandler(this.btnThemLoaiDG_Click);
             // 
             // label5
             // 
@@ -234,6 +238,7 @@
             this.btnXoaTinhTrangDG.TabIndex = 90;
             this.btnXoaTinhTrangDG.Text = "Xóa Tình Trạng Độc Giả";
             this.btnXoaTinhTrangDG.UseVisualStyleBackColor = true;
+            this.btnXoaTinhTrangDG.Click += new System.EventHandler(this.btnXoaTinhTrangDG_Click);
             // 
             // btnSuaTinhTrangDG
             // 
@@ -244,6 +249,7 @@
             this.btnSuaTinhTrangDG.TabIndex = 89;
             this.btnSuaTinhTrangDG.Text = "Sửa Tình Trạng Độc Giả";
             this.btnSuaTinhTrangDG.UseVisualStyleBackColor = true;
+            this.btnSuaTinhTrangDG.Click += new System.EventHandler(this.btnSuaTinhTrangDG_Click);
             // 
             // dgvTinhTrangDG
             // 
@@ -263,6 +269,7 @@
             this.dgvTinhTrangDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTinhTrangDG.Size = new System.Drawing.Size(384, 254);
             this.dgvTinhTrangDG.TabIndex = 88;
+            this.dgvTinhTrangDG.SelectionChanged += new System.EventHandler(this.dgvTinhTrangDG_SelectionChanged);
             // 
             // MaTinhTrangDG
             // 
@@ -289,6 +296,7 @@
             this.btnThemTinhTrangDG.TabIndex = 87;
             this.btnThemTinhTrangDG.Text = "Thêm Tình Trạng Độc Giả";
             this.btnThemTinhTrangDG.UseVisualStyleBackColor = true;
+            this.btnThemTinhTrangDG.Click += new System.EventHandler(this.btnThemTinhTrangDG_Click);
             // 
             // ManHinhChucNangCapNhatBangLienQuanDocGia
             // 
@@ -315,6 +323,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ManHinhChucNangCapNhatBangLienQuanDocGia";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangCapNhatBangLienQuanDocGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiDocGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTinhTrangDG)).EndInit();
             this.ResumeLayout(false);

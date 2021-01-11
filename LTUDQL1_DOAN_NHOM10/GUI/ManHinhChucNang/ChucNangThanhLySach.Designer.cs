@@ -86,6 +86,7 @@
             this.cbbNhanVien.Name = "cbbNhanVien";
             this.cbbNhanVien.Size = new System.Drawing.Size(228, 34);
             this.cbbNhanVien.TabIndex = 53;
+            this.cbbNhanVien.SelectedValueChanged += new System.EventHandler(this.cbbNhanVien_SelectedValueChanged);
             // 
             // dtNgayThanhLy
             // 
@@ -108,6 +109,7 @@
             this.btnThoat.TabIndex = 51;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnHoanTat
             // 
@@ -119,6 +121,7 @@
             this.btnHoanTat.TabIndex = 50;
             this.btnHoanTat.Text = "Hoàn tất";
             this.btnHoanTat.UseVisualStyleBackColor = true;
+            this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
             // dgvChiTietPhieuThanhLy
             // 
@@ -281,6 +284,7 @@
             this.btnLamMoi.TabIndex = 37;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // label1
             // 
@@ -301,6 +305,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangThanhLySach";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangThanhLySach_Load);
+            this.SizeChanged += new System.EventHandler(this.ManHinhChucNangThanhLySach_SizeChanged);
             this.pnWrapperThanhLySach.ResumeLayout(false);
             this.pnWrapperThanhLySach.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPhieuThanhLy)).EndInit();

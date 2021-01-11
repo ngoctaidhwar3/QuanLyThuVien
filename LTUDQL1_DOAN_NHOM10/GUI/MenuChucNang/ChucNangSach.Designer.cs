@@ -65,6 +65,7 @@
             this.btnItemThanhLySach.TabIndex = 20;
             this.btnItemThanhLySach.Text = "Thanh Lý Sách";
             this.btnItemThanhLySach.UseVisualStyleBackColor = true;
+            this.btnItemThanhLySach.Click += new System.EventHandler(this.btnItemThanhLySach_Click);
             // 
             // btnItemGhiNhanMatSach
             // 
@@ -77,6 +78,7 @@
             this.btnItemGhiNhanMatSach.TabIndex = 19;
             this.btnItemGhiNhanMatSach.Text = "Ghi Nhận Mất Sách";
             this.btnItemGhiNhanMatSach.UseVisualStyleBackColor = true;
+            this.btnItemGhiNhanMatSach.Click += new System.EventHandler(this.btnItemGhiNhanMatSach_Click);
             // 
             // btnItemNhanTraSach
             // 
@@ -89,6 +91,7 @@
             this.btnItemNhanTraSach.TabIndex = 18;
             this.btnItemNhanTraSach.Text = "Nhận Trả Sách";
             this.btnItemNhanTraSach.UseVisualStyleBackColor = true;
+            this.btnItemNhanTraSach.Click += new System.EventHandler(this.btnItemNhanTraSach_Click);
             // 
             // btnItemChoMuonSach
             // 
@@ -114,6 +117,7 @@
             this.btnItemTraCuuSach.TabIndex = 16;
             this.btnItemTraCuuSach.Text = "Tra Cứu Sách";
             this.btnItemTraCuuSach.UseVisualStyleBackColor = true;
+            this.btnItemTraCuuSach.Click += new System.EventHandler(this.btnItemTraCuuSach_Click);
             // 
             // btnItemTiepNhanSachMoi
             // 
@@ -126,10 +130,12 @@
             this.btnItemTiepNhanSachMoi.TabIndex = 15;
             this.btnItemTiepNhanSachMoi.Text = "Tiếp Nhận Sách Mới";
             this.btnItemTiepNhanSachMoi.UseVisualStyleBackColor = true;
+            this.btnItemTiepNhanSachMoi.Click += new System.EventHandler(this.btnItemTiepNhanSachMoi_Click);
             // 
             // timerAnimationSlide
             // 
             this.timerAnimationSlide.Interval = 1;
+            this.timerAnimationSlide.Tick += new System.EventHandler(this.timerAnimationSlide_Tick);
             // 
             // MenuChucNangSach
             // 
@@ -139,6 +145,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuChucNangSach";
             this.Size = new System.Drawing.Size(247, 578);
+            this.Load += new System.EventHandler(this.MenuChucNangSach_Load);
             this.pnChucNangSach.ResumeLayout(false);
             this.ResumeLayout(false);
 

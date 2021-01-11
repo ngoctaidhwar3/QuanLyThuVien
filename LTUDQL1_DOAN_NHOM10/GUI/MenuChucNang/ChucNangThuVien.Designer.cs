@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnChucNangThuVien = new System.Windows.Forms.Panel();
-            this.btnItemTiepNhanNhanVien = new System.Windows.Forms.Button();
-            this.btnItemLapBaoCaoTheLoai = new System.Windows.Forms.Button();
-            this.btnItemLapBaoCaoSachTraTre = new System.Windows.Forms.Button();
-            this.btnItemLapBaoCaoDocGiaNoTien = new System.Windows.Forms.Button();
             this.btnItemQuanLyNhanVien = new System.Windows.Forms.Button();
+            this.btnItemLapBaoCaoDocGiaNoTien = new System.Windows.Forms.Button();
+            this.btnItemLapBaoCaoSachTraTre = new System.Windows.Forms.Button();
+            this.btnItemLapBaoCaoTheLoai = new System.Windows.Forms.Button();
+            this.btnItemTiepNhanNhanVien = new System.Windows.Forms.Button();
             this.timerAnimationSlide = new System.Windows.Forms.Timer(this.components);
             this.pnChucNangThuVien.SuspendLayout();
             this.SuspendLayout();
@@ -52,41 +52,18 @@
             this.pnChucNangThuVien.Size = new System.Drawing.Size(247, 578);
             this.pnChucNangThuVien.TabIndex = 0;
             // 
-            // btnItemTiepNhanNhanVien
+            // btnItemQuanLyNhanVien
             // 
-            this.btnItemTiepNhanNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemTiepNhanNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemTiepNhanNhanVien.Location = new System.Drawing.Point(0, 0);
-            this.btnItemTiepNhanNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemTiepNhanNhanVien.Name = "btnItemTiepNhanNhanVien";
-            this.btnItemTiepNhanNhanVien.Size = new System.Drawing.Size(247, 74);
-            this.btnItemTiepNhanNhanVien.TabIndex = 31;
-            this.btnItemTiepNhanNhanVien.Text = "Tiếp Nhận Nhân Viên";
-            this.btnItemTiepNhanNhanVien.UseVisualStyleBackColor = true;
-            // 
-            // btnItemLapBaoCaoTheLoai
-            // 
-            this.btnItemLapBaoCaoTheLoai.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemLapBaoCaoTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemLapBaoCaoTheLoai.Location = new System.Drawing.Point(0, 74);
-            this.btnItemLapBaoCaoTheLoai.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemLapBaoCaoTheLoai.Name = "btnItemLapBaoCaoTheLoai";
-            this.btnItemLapBaoCaoTheLoai.Size = new System.Drawing.Size(247, 74);
-            this.btnItemLapBaoCaoTheLoai.TabIndex = 32;
-            this.btnItemLapBaoCaoTheLoai.Text = "Lập Báo Cáo Mượn Sách Theo Thể Loại";
-            this.btnItemLapBaoCaoTheLoai.UseVisualStyleBackColor = true;
-            // 
-            // btnItemLapBaoCaoSachTraTre
-            // 
-            this.btnItemLapBaoCaoSachTraTre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemLapBaoCaoSachTraTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemLapBaoCaoSachTraTre.Location = new System.Drawing.Point(0, 148);
-            this.btnItemLapBaoCaoSachTraTre.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemLapBaoCaoSachTraTre.Name = "btnItemLapBaoCaoSachTraTre";
-            this.btnItemLapBaoCaoSachTraTre.Size = new System.Drawing.Size(247, 74);
-            this.btnItemLapBaoCaoSachTraTre.TabIndex = 33;
-            this.btnItemLapBaoCaoSachTraTre.Text = "Lập Báo Cáo Thống Kê Sách Trả Trễ";
-            this.btnItemLapBaoCaoSachTraTre.UseVisualStyleBackColor = true;
+            this.btnItemQuanLyNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemQuanLyNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemQuanLyNhanVien.Location = new System.Drawing.Point(0, 296);
+            this.btnItemQuanLyNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemQuanLyNhanVien.Name = "btnItemQuanLyNhanVien";
+            this.btnItemQuanLyNhanVien.Size = new System.Drawing.Size(247, 74);
+            this.btnItemQuanLyNhanVien.TabIndex = 29;
+            this.btnItemQuanLyNhanVien.Text = "Quản Lí Nhân Viên";
+            this.btnItemQuanLyNhanVien.UseVisualStyleBackColor = true;
+            this.btnItemQuanLyNhanVien.Click += new System.EventHandler(this.btnItemQuanLyNhanVien_Click);
             // 
             // btnItemLapBaoCaoDocGiaNoTien
             // 
@@ -99,22 +76,51 @@
             this.btnItemLapBaoCaoDocGiaNoTien.TabIndex = 30;
             this.btnItemLapBaoCaoDocGiaNoTien.Text = "Lập Báo Cáo Thống Kê Độc Giả Nợ Tiền Phạt";
             this.btnItemLapBaoCaoDocGiaNoTien.UseVisualStyleBackColor = true;
+            this.btnItemLapBaoCaoDocGiaNoTien.Click += new System.EventHandler(this.btnItemLapBaoCaoDocGiaNoTien_Click);
             // 
-            // btnItemQuanLyNhanVien
+            // btnItemLapBaoCaoSachTraTre
             // 
-            this.btnItemQuanLyNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemQuanLyNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemQuanLyNhanVien.Location = new System.Drawing.Point(0, 296);
-            this.btnItemQuanLyNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemQuanLyNhanVien.Name = "btnItemQuanLyNhanVien";
-            this.btnItemQuanLyNhanVien.Size = new System.Drawing.Size(247, 74);
-            this.btnItemQuanLyNhanVien.TabIndex = 29;
-            this.btnItemQuanLyNhanVien.Text = "Quản Lí Nhân Viên";
-            this.btnItemQuanLyNhanVien.UseVisualStyleBackColor = true;
+            this.btnItemLapBaoCaoSachTraTre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemLapBaoCaoSachTraTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemLapBaoCaoSachTraTre.Location = new System.Drawing.Point(0, 148);
+            this.btnItemLapBaoCaoSachTraTre.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemLapBaoCaoSachTraTre.Name = "btnItemLapBaoCaoSachTraTre";
+            this.btnItemLapBaoCaoSachTraTre.Size = new System.Drawing.Size(247, 74);
+            this.btnItemLapBaoCaoSachTraTre.TabIndex = 33;
+            this.btnItemLapBaoCaoSachTraTre.Text = "Lập Báo Cáo Thống Kê Sách Trả Trễ";
+            this.btnItemLapBaoCaoSachTraTre.UseVisualStyleBackColor = true;
+            this.btnItemLapBaoCaoSachTraTre.Click += new System.EventHandler(this.btnItemLapBaoCaoSachTraTre_Click);
+            // 
+            // btnItemLapBaoCaoTheLoai
+            // 
+            this.btnItemLapBaoCaoTheLoai.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemLapBaoCaoTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemLapBaoCaoTheLoai.Location = new System.Drawing.Point(0, 74);
+            this.btnItemLapBaoCaoTheLoai.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemLapBaoCaoTheLoai.Name = "btnItemLapBaoCaoTheLoai";
+            this.btnItemLapBaoCaoTheLoai.Size = new System.Drawing.Size(247, 74);
+            this.btnItemLapBaoCaoTheLoai.TabIndex = 32;
+            this.btnItemLapBaoCaoTheLoai.Text = "Lập Báo Cáo Mượn Sách Theo Thể Loại";
+            this.btnItemLapBaoCaoTheLoai.UseVisualStyleBackColor = true;
+            this.btnItemLapBaoCaoTheLoai.Click += new System.EventHandler(this.btnItemLapBaoCaoTheLoai_Click);
+            // 
+            // btnItemTiepNhanNhanVien
+            // 
+            this.btnItemTiepNhanNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemTiepNhanNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemTiepNhanNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.btnItemTiepNhanNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemTiepNhanNhanVien.Name = "btnItemTiepNhanNhanVien";
+            this.btnItemTiepNhanNhanVien.Size = new System.Drawing.Size(247, 74);
+            this.btnItemTiepNhanNhanVien.TabIndex = 31;
+            this.btnItemTiepNhanNhanVien.Text = "Tiếp Nhận Nhân Viên";
+            this.btnItemTiepNhanNhanVien.UseVisualStyleBackColor = true;
+            this.btnItemTiepNhanNhanVien.Click += new System.EventHandler(this.btnItemTiepNhanNhanVien_Click);
             // 
             // timerAnimationSlide
             // 
             this.timerAnimationSlide.Interval = 1;
+            this.timerAnimationSlide.Tick += new System.EventHandler(this.timerAnimationSlide_Tick);
             // 
             // MenuChucNangThuVien
             // 
@@ -124,6 +130,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuChucNangThuVien";
             this.Size = new System.Drawing.Size(247, 578);
+            this.Load += new System.EventHandler(this.MenuChucNangThuVien_Load);
             this.pnChucNangThuVien.ResumeLayout(false);
             this.ResumeLayout(false);
 

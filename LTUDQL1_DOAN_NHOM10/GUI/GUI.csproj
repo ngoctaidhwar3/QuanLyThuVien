@@ -74,7 +74,7 @@
     <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanSach.Designer.CS">
+    <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLienQuanSach.Designer.cs">
       <DependentUpon>ChucNangCapNhatBangLienQuanSach.cs</DependentUpon>
     </Compile>
     <Compile Include="ManHinhChucNang\ChucNangCapNhatBangLyDoThanhLy.cs">

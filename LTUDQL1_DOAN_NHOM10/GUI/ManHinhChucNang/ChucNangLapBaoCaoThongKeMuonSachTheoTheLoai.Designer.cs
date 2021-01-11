@@ -74,6 +74,7 @@
             this.btnThoat.TabIndex = 48;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnHoanTat
             // 
@@ -85,6 +86,7 @@
             this.btnHoanTat.TabIndex = 47;
             this.btnHoanTat.Text = "Hoàn tất";
             this.btnHoanTat.UseVisualStyleBackColor = true;
+            this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
             // dgvBaoCaoMuonSachTheoTheLoai
             // 
@@ -191,6 +193,7 @@
             this.btnLamMoi.TabIndex = 44;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // label1
             // 
@@ -211,6 +214,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangLapBaoCaoThongKeMuonSachTheoTheLoai";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangLapBaoCaoThongKeMuonSachTheoTheLoai_Load);
+            this.SizeChanged += new System.EventHandler(this.ManHinhChucNangLapBaoCaoThongKeMuonSachTheoTheLoai_SizeChanged);
             this.pnWrapperBaoCao.ResumeLayout(false);
             this.pnWrapperBaoCao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoMuonSachTheoTheLoai)).EndInit();

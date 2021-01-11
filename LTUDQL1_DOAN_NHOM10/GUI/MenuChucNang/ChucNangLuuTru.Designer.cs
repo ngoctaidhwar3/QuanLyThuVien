@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnChucNangLuuTru = new System.Windows.Forms.Panel();
-            this.btnItemSaoLuuDuLieu = new System.Windows.Forms.Button();
-            this.btnItemPhucHoiDuLieu = new System.Windows.Forms.Button();
             this.btnItemQuanLyDuLieuTamXoa = new System.Windows.Forms.Button();
+            this.btnItemPhucHoiDuLieu = new System.Windows.Forms.Button();
+            this.btnItemSaoLuuDuLieu = new System.Windows.Forms.Button();
             this.timerAnimationSlide = new System.Windows.Forms.Timer(this.components);
             this.pnChucNangLuuTru.SuspendLayout();
             this.SuspendLayout();
@@ -48,29 +48,6 @@
             this.pnChucNangLuuTru.Size = new System.Drawing.Size(247, 578);
             this.pnChucNangLuuTru.TabIndex = 0;
             // 
-            // btnItemSaoLuuDuLieu
-            // 
-            this.btnItemSaoLuuDuLieu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemSaoLuuDuLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemSaoLuuDuLieu.Location = new System.Drawing.Point(0, 0);
-            this.btnItemSaoLuuDuLieu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemSaoLuuDuLieu.Name = "btnItemSaoLuuDuLieu";
-            this.btnItemSaoLuuDuLieu.Size = new System.Drawing.Size(247, 74);
-            this.btnItemSaoLuuDuLieu.TabIndex = 12;
-            this.btnItemSaoLuuDuLieu.Text = "Sao Lưu Dữ Liệu";
-            this.btnItemSaoLuuDuLieu.UseVisualStyleBackColor = true;
-            // 
-            // btnItemPhucHoiDuLieu
-            // 
-            this.btnItemPhucHoiDuLieu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemPhucHoiDuLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemPhucHoiDuLieu.Location = new System.Drawing.Point(0, 74);
-            this.btnItemPhucHoiDuLieu.Name = "btnItemPhucHoiDuLieu";
-            this.btnItemPhucHoiDuLieu.Size = new System.Drawing.Size(247, 74);
-            this.btnItemPhucHoiDuLieu.TabIndex = 13;
-            this.btnItemPhucHoiDuLieu.Text = "Phục Hồi Dữ Liệu";
-            this.btnItemPhucHoiDuLieu.UseVisualStyleBackColor = true;
-            // 
             // btnItemQuanLyDuLieuTamXoa
             // 
             this.btnItemQuanLyDuLieuTamXoa.Dock = System.Windows.Forms.DockStyle.Top;
@@ -83,9 +60,33 @@
             this.btnItemQuanLyDuLieuTamXoa.Text = "Dữ Liệu Xóa Tạm";
             this.btnItemQuanLyDuLieuTamXoa.UseVisualStyleBackColor = true;
             // 
+            // btnItemPhucHoiDuLieu
+            // 
+            this.btnItemPhucHoiDuLieu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemPhucHoiDuLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemPhucHoiDuLieu.Location = new System.Drawing.Point(0, 74);
+            this.btnItemPhucHoiDuLieu.Name = "btnItemPhucHoiDuLieu";
+            this.btnItemPhucHoiDuLieu.Size = new System.Drawing.Size(247, 74);
+            this.btnItemPhucHoiDuLieu.TabIndex = 13;
+            this.btnItemPhucHoiDuLieu.Text = "Phục Hồi Dữ Liệu";
+            this.btnItemPhucHoiDuLieu.UseVisualStyleBackColor = true;
+            // 
+            // btnItemSaoLuuDuLieu
+            // 
+            this.btnItemSaoLuuDuLieu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemSaoLuuDuLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemSaoLuuDuLieu.Location = new System.Drawing.Point(0, 0);
+            this.btnItemSaoLuuDuLieu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemSaoLuuDuLieu.Name = "btnItemSaoLuuDuLieu";
+            this.btnItemSaoLuuDuLieu.Size = new System.Drawing.Size(247, 74);
+            this.btnItemSaoLuuDuLieu.TabIndex = 12;
+            this.btnItemSaoLuuDuLieu.Text = "Sao Lưu Dữ Liệu";
+            this.btnItemSaoLuuDuLieu.UseVisualStyleBackColor = true;
+            // 
             // timerAnimationSlide
             // 
             this.timerAnimationSlide.Interval = 1;
+            this.timerAnimationSlide.Tick += new System.EventHandler(this.timerAnimationSlide_Tick);
             // 
             // MenuChucNangLuuTru
             // 
@@ -95,6 +96,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuChucNangLuuTru";
             this.Size = new System.Drawing.Size(247, 578);
+            this.Load += new System.EventHandler(this.MenuChucNangLuuTru_Load);
             this.pnChucNangLuuTru.ResumeLayout(false);
             this.ResumeLayout(false);
 

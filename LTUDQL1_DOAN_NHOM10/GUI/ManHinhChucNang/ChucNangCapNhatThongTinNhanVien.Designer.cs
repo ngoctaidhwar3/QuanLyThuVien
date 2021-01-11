@@ -290,6 +290,7 @@
             this.btnXoaTinhTrang.TabIndex = 65;
             this.btnXoaTinhTrang.Text = "Xóa Tình Trạng";
             this.btnXoaTinhTrang.UseVisualStyleBackColor = true;
+            this.btnXoaTinhTrang.Click += new System.EventHandler(this.btnXoaTinhTrang_Click);
             // 
             // btnSuaTinhTrang
             // 
@@ -300,6 +301,7 @@
             this.btnSuaTinhTrang.TabIndex = 64;
             this.btnSuaTinhTrang.Text = "Sủa Tình Trạng";
             this.btnSuaTinhTrang.UseVisualStyleBackColor = true;
+            this.btnSuaTinhTrang.Click += new System.EventHandler(this.btnSuaTinhTrang_Click);
             // 
             // btnThemTinhTrang
             // 
@@ -310,6 +312,7 @@
             this.btnThemTinhTrang.TabIndex = 63;
             this.btnThemTinhTrang.Text = "Thêm Tình Trạng";
             this.btnThemTinhTrang.UseVisualStyleBackColor = true;
+            this.btnThemTinhTrang.Click += new System.EventHandler(this.btnThemTinhTrang_Click);
             // 
             // dgvTinhTrang
             // 
@@ -329,6 +332,7 @@
             this.dgvTinhTrang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTinhTrang.Size = new System.Drawing.Size(274, 253);
             this.dgvTinhTrang.TabIndex = 62;
+            this.dgvTinhTrang.SelectionChanged += new System.EventHandler(this.dgvTinhTrang_SelectionChanged);
             // 
             // MaTinhTrangNV
             // 
@@ -355,6 +359,7 @@
             this.btnXoaBoPhan.TabIndex = 61;
             this.btnXoaBoPhan.Text = "Xóa Bộ Phận";
             this.btnXoaBoPhan.UseVisualStyleBackColor = true;
+            this.btnXoaBoPhan.Click += new System.EventHandler(this.btnXoaBoPhan_Click);
             // 
             // btnSuaBoPhan
             // 
@@ -365,6 +370,7 @@
             this.btnSuaBoPhan.TabIndex = 60;
             this.btnSuaBoPhan.Text = "Sửa Bộ Phận";
             this.btnSuaBoPhan.UseVisualStyleBackColor = true;
+            this.btnSuaBoPhan.Click += new System.EventHandler(this.btnSuaBoPhan_Click);
             // 
             // btnThemBoPhan
             // 
@@ -375,6 +381,7 @@
             this.btnThemBoPhan.TabIndex = 59;
             this.btnThemBoPhan.Text = "Thêm Bộ Phận";
             this.btnThemBoPhan.UseVisualStyleBackColor = true;
+            this.btnThemBoPhan.Click += new System.EventHandler(this.btnThemBoPhan_Click);
             // 
             // dgvBoPhan
             // 
@@ -394,6 +401,7 @@
             this.dgvBoPhan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBoPhan.Size = new System.Drawing.Size(274, 253);
             this.dgvBoPhan.TabIndex = 58;
+            this.dgvBoPhan.SelectionChanged += new System.EventHandler(this.dgvBoPhan_SelectionChanged);
             // 
             // MaBoPhan
             // 
@@ -420,6 +428,7 @@
             this.btnXoaBangCap.TabIndex = 57;
             this.btnXoaBangCap.Text = "Xóa Bằng Cấp";
             this.btnXoaBangCap.UseVisualStyleBackColor = true;
+            this.btnXoaBangCap.Click += new System.EventHandler(this.btnXoaBangCap_Click);
             // 
             // btnSuaBangCap
             // 
@@ -430,6 +439,7 @@
             this.btnSuaBangCap.TabIndex = 56;
             this.btnSuaBangCap.Text = "Sửa Bằng Cấp";
             this.btnSuaBangCap.UseVisualStyleBackColor = true;
+            this.btnSuaBangCap.Click += new System.EventHandler(this.btnSuaBangCap_Click);
             // 
             // btnThemBangCap
             // 
@@ -440,6 +450,7 @@
             this.btnThemBangCap.TabIndex = 55;
             this.btnThemBangCap.Text = "Thêm Bằng Cấp";
             this.btnThemBangCap.UseVisualStyleBackColor = true;
+            this.btnThemBangCap.Click += new System.EventHandler(this.btnThemBangCap_Click);
             // 
             // btnXoaChucVu
             // 
@@ -450,6 +461,7 @@
             this.btnXoaChucVu.TabIndex = 54;
             this.btnXoaChucVu.Text = "Xóa Chức Vụ";
             this.btnXoaChucVu.UseVisualStyleBackColor = true;
+            this.btnXoaChucVu.Click += new System.EventHandler(this.btnXoaChucVu_Click);
             // 
             // btnSuaChucVu
             // 
@@ -460,6 +472,7 @@
             this.btnSuaChucVu.TabIndex = 53;
             this.btnSuaChucVu.Text = "Sửa Chức Vụ";
             this.btnSuaChucVu.UseVisualStyleBackColor = true;
+            this.btnSuaChucVu.Click += new System.EventHandler(this.btnSuaChucVu_Click);
             // 
             // dgvBangCap
             // 
@@ -479,6 +492,7 @@
             this.dgvBangCap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBangCap.Size = new System.Drawing.Size(274, 253);
             this.dgvBangCap.TabIndex = 52;
+            this.dgvBangCap.SelectionChanged += new System.EventHandler(this.dgvBangCap_SelectionChanged);
             // 
             // MaBangCap
             // 
@@ -514,6 +528,7 @@
             this.dgvChucVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvChucVu.Size = new System.Drawing.Size(274, 253);
             this.dgvChucVu.TabIndex = 51;
+            this.dgvChucVu.SelectionChanged += new System.EventHandler(this.dgvChucVu_SelectionChanged);
             // 
             // MaChucVu
             // 
@@ -540,6 +555,7 @@
             this.btnThemChucVu.TabIndex = 50;
             this.btnThemChucVu.Text = "Thêm Chức Vụ";
             this.btnThemChucVu.UseVisualStyleBackColor = true;
+            this.btnThemChucVu.Click += new System.EventHandler(this.btnThemChucVu_Click);
             // 
             // ManHinhChucNangCapNhatThongTinNhanVien
             // 
@@ -584,6 +600,7 @@
             this.Controls.Add(this.btnThemChucVu);
             this.Name = "ManHinhChucNangCapNhatThongTinNhanVien";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangCapNhatThongTinNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTinhTrang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBoPhan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangCap)).EndInit();

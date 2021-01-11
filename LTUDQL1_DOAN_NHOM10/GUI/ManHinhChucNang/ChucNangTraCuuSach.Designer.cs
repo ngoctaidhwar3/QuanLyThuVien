@@ -72,6 +72,7 @@
             this.btnClose.TabIndex = 27;
             this.btnClose.Text = "Thoát";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSearch
             // 
@@ -83,6 +84,7 @@
             this.btnSearch.TabIndex = 26;
             this.btnSearch.Text = "Tra cứu";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvBook
             // 
@@ -271,6 +273,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangTraCuuSach";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangTraCuuSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

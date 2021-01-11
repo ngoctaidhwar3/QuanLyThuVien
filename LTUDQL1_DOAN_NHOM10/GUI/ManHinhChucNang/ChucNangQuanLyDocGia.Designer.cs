@@ -141,6 +141,7 @@
             this.btnCapNhat.TabIndex = 12;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnThoat
             // 
@@ -151,6 +152,7 @@
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label1
             // 
@@ -172,6 +174,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ManHinhChucNangQuanLyDocGia";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangQuanLyDocGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachDocGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -72,6 +72,7 @@
             this.btnThoat.TabIndex = 52;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLapPhieu
             // 
@@ -83,6 +84,7 @@
             this.btnLapPhieu.TabIndex = 51;
             this.btnLapPhieu.Text = "Lập Phiếu";
             this.btnLapPhieu.UseVisualStyleBackColor = true;
+            this.btnLapPhieu.Click += new System.EventHandler(this.btnLapPhieu_Click);
             // 
             // dtgrPhieuTra
             // 
@@ -102,6 +104,10 @@
             this.dtgrPhieuTra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dtgrPhieuTra.Size = new System.Drawing.Size(777, 208);
             this.dtgrPhieuTra.TabIndex = 50;
+            this.dtgrPhieuTra.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrPhieuTra_CellDoubleClick);
+            this.dtgrPhieuTra.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrPhieuTra_CellEndEdit);
+            this.dtgrPhieuTra.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dtgrPhieuTra_RowsAdded);
+            this.dtgrPhieuTra.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dtgrPhieuTra_RowsRemoved);
             // 
             // STT
             // 
@@ -163,6 +169,7 @@
             this.dtNgayTra.Name = "dtNgayTra";
             this.dtNgayTra.Size = new System.Drawing.Size(187, 22);
             this.dtNgayTra.TabIndex = 49;
+            this.dtNgayTra.ValueChanged += new System.EventHandler(this.dtNgayTra_ValueChanged);
             // 
             // txtTongNo
             // 
@@ -228,6 +235,7 @@
             this.txtMaDG.Name = "txtMaDG";
             this.txtMaDG.Size = new System.Drawing.Size(169, 22);
             this.txtMaDG.TabIndex = 42;
+            this.txtMaDG.Leave += new System.EventHandler(this.txtMaDG_Leave);
             // 
             // txtMaPhieuTra
             // 
@@ -358,7 +366,7 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "PHIẾU TRẢ SÁCH ";
             // 
-            // ChucNangNhanTraSach
+            // ManHinhChucNangNhanTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -385,8 +393,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ChucNangNhanTraSach";
+            this.Name = "ManHinhChucNangNhanTraSach";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangNhanTraSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrPhieuTra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

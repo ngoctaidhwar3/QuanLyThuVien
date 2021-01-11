@@ -86,6 +86,7 @@
             this.btnChupHinh.TabIndex = 54;
             this.btnChupHinh.Text = "Chụp hình";
             this.btnChupHinh.UseVisualStyleBackColor = true;
+            this.btnChupHinh.Click += new System.EventHandler(this.btnChupHinh_Click);
             // 
             // btnThoat
             // 
@@ -97,6 +98,7 @@
             this.btnThoat.TabIndex = 53;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnHoanTat
             // 
@@ -108,6 +110,7 @@
             this.btnHoanTat.TabIndex = 52;
             this.btnHoanTat.Text = "Hoàn tất";
             this.btnHoanTat.UseVisualStyleBackColor = true;
+            this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
             // btnLamMoi
             // 
@@ -119,6 +122,7 @@
             this.btnLamMoi.TabIndex = 51;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // cbbBoPhan
             // 
@@ -201,6 +205,7 @@
             this.btnChonHinh.TabIndex = 43;
             this.btnChonHinh.Text = "Chọn hình";
             this.btnChonHinh.UseVisualStyleBackColor = true;
+            this.btnChonHinh.Click += new System.EventHandler(this.btnChonHinh_Click);
             // 
             // label8
             // 
@@ -352,6 +357,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangTiepNhanNhanVien";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangTiepNhanNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

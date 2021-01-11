@@ -103,6 +103,7 @@
             this.btnHuy.TabIndex = 15;
             this.btnHuy.Text = "Thoát";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnGhiNhan
             // 
@@ -114,6 +115,7 @@
             this.btnGhiNhan.TabIndex = 14;
             this.btnGhiNhan.Text = "Hoàn Tất";
             this.btnGhiNhan.UseVisualStyleBackColor = true;
+            this.btnGhiNhan.Click += new System.EventHandler(this.btnGhiNhan_Click);
             // 
             // dtpNgayGhiNhanMat
             // 
@@ -133,6 +135,7 @@
             this.txtNguoiGhiNhan.Name = "txtNguoiGhiNhan";
             this.txtNguoiGhiNhan.Size = new System.Drawing.Size(180, 30);
             this.txtNguoiGhiNhan.TabIndex = 9;
+            this.txtNguoiGhiNhan.Leave += new System.EventHandler(this.txtNguoiGhiNhan_Leave);
             // 
             // txtTienPhat
             // 
@@ -142,6 +145,7 @@
             this.txtTienPhat.Name = "txtTienPhat";
             this.txtTienPhat.Size = new System.Drawing.Size(180, 30);
             this.txtTienPhat.TabIndex = 10;
+            this.txtTienPhat.Leave += new System.EventHandler(this.txtTienPhat_Leave);
             // 
             // txtMaDG
             // 
@@ -151,6 +155,7 @@
             this.txtMaDG.Name = "txtMaDG";
             this.txtMaDG.Size = new System.Drawing.Size(180, 30);
             this.txtMaDG.TabIndex = 11;
+            this.txtMaDG.Leave += new System.EventHandler(this.txtMaDG_Leave);
             // 
             // txtMaSach
             // 
@@ -160,6 +165,7 @@
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.Size = new System.Drawing.Size(180, 30);
             this.txtMaSach.TabIndex = 12;
+            this.txtMaSach.Leave += new System.EventHandler(this.txtMaSach_Leave);
             // 
             // label1
             // 

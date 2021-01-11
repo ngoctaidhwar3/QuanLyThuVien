@@ -72,6 +72,7 @@
             this.btnCapNhat.TabIndex = 5;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // dgvQuyDinh
             // 
@@ -153,6 +154,7 @@
             this.Controls.Add(this.dgvQuyDinh);
             this.Name = "ManHinhChucNangCapNhatBangQuyDinh";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangCapNhatBangQuyDinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuyDinh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

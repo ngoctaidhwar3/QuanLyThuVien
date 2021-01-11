@@ -100,6 +100,7 @@
             this.btnXoaLyDo.TabIndex = 95;
             this.btnXoaLyDo.Text = "Xóa";
             this.btnXoaLyDo.UseVisualStyleBackColor = true;
+            this.btnXoaLyDo.Click += new System.EventHandler(this.btnXoaLyDo_Click);
             // 
             // btnSuaLyDo
             // 
@@ -110,6 +111,7 @@
             this.btnSuaLyDo.TabIndex = 94;
             this.btnSuaLyDo.Text = "Sửa";
             this.btnSuaLyDo.UseVisualStyleBackColor = true;
+            this.btnSuaLyDo.Click += new System.EventHandler(this.btnSuaLyDo_Click);
             // 
             // dgvLyDoThanhLySach
             // 
@@ -128,6 +130,7 @@
             this.dgvLyDoThanhLySach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLyDoThanhLySach.Size = new System.Drawing.Size(901, 248);
             this.dgvLyDoThanhLySach.TabIndex = 93;
+            this.dgvLyDoThanhLySach.SelectionChanged += new System.EventHandler(this.dgvLyDoThanhLySach_SelectionChanged);
             // 
             // MaLyDoThanhLy
             // 
@@ -158,6 +161,7 @@
             this.btnThemLyDo.TabIndex = 92;
             this.btnThemLyDo.Text = "Thêm";
             this.btnThemLyDo.UseVisualStyleBackColor = true;
+            this.btnThemLyDo.Click += new System.EventHandler(this.btnThemLyDo_Click);
             // 
             // label13
             // 
@@ -185,6 +189,7 @@
             this.Controls.Add(this.label13);
             this.Name = "ManHinhChucNangCapNhatBangLyDoThanhLy";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangCapNhatBangLyDoThanhLy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLyDoThanhLySach)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

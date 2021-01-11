@@ -84,6 +84,7 @@
             this.btnClose.TabIndex = 56;
             this.btnClose.Text = "Thoát";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDone
             // 
@@ -95,6 +96,7 @@
             this.btnDone.TabIndex = 55;
             this.btnDone.Text = "Hoàn tất";
             this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
             // btnRefresh
             // 
@@ -106,6 +108,7 @@
             this.btnRefresh.TabIndex = 54;
             this.btnRefresh.Text = "Làm mới";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // dtpReceivedDate
             // 
@@ -317,6 +320,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangTiepNhanSachMoi";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangTiepNhanSachMoi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

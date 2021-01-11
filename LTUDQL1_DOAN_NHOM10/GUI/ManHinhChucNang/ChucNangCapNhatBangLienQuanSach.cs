@@ -20,6 +20,7 @@ namespace GUI.ManHinhChucNang
 
         private void LoadDanhSachTheLoaiSach()
         {
+
             TheLoaiBUS TheLoaiBUS = new TheLoaiBUS();
             DataTable dsTheLoai = TheLoaiBUS.LayDanhSachTheLoai();
 
@@ -29,7 +30,7 @@ namespace GUI.ManHinhChucNang
 
         private void LoadDanhSachTacGia()
         {
-            
+
             TacGiaBUS TacGiaBUS = new TacGiaBUS();
             DataTable dsTacGia = TacGiaBUS.LayDanhSachTacGia();
 
@@ -39,7 +40,8 @@ namespace GUI.ManHinhChucNang
 
         private void LoadDanhSachNXB()
         {
-            
+
+
             NXBBUS NXBBUS = new NXBBUS();
             DataTable dsNXB = NXBBUS.LayDanhSachNXB();
             dtgridviewNXB.DataSource = dsNXB;
@@ -48,7 +50,8 @@ namespace GUI.ManHinhChucNang
 
         private void LoadDanhSachTinhTrangSach()
         {
-            
+
+
             TinhTrangSachBUS TTSBUS = new TinhTrangSachBUS();
             DataTable dsTTS = TTSBUS.LayDanhSachTinhTrangSach();
             dtgridviewTTS.DataSource = dsTTS;
@@ -103,7 +106,7 @@ namespace GUI.ManHinhChucNang
             }
         }
 
-       
+
         private void btnThemTheLoai_Click(object sender, EventArgs e)
         {
             if (txtTenTheLoai.Text == "")
@@ -178,7 +181,7 @@ namespace GUI.ManHinhChucNang
         }
 
 
-        
+
         private void btnThemTacGia_Click(object sender, EventArgs e)
         {
             if (txtTenTG.Text == "")
@@ -254,7 +257,7 @@ namespace GUI.ManHinhChucNang
 
 
 
-     
+
         private void btnThemNXB_Click(object sender, EventArgs e)
         {
             if (txtTenNXB.Text == "")

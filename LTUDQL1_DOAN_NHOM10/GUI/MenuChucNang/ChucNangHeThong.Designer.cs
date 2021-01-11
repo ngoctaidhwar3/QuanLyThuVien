@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnChucNangHeThong = new System.Windows.Forms.Panel();
-            this.btnItemDangXuat = new System.Windows.Forms.Button();
-            this.btnItemDoiMatKhau = new System.Windows.Forms.Button();
-            this.btnItemCapNhatPhanQuyen = new System.Windows.Forms.Button();
-            this.btnItemCauHinhThietBi = new System.Windows.Forms.Button();
             this.btnItemCauHinhPhanMem = new System.Windows.Forms.Button();
+            this.btnItemCauHinhThietBi = new System.Windows.Forms.Button();
+            this.btnItemCapNhatPhanQuyen = new System.Windows.Forms.Button();
+            this.btnItemDoiMatKhau = new System.Windows.Forms.Button();
+            this.btnItemDangXuat = new System.Windows.Forms.Button();
             this.timerAnimationSlide = new System.Windows.Forms.Timer(this.components);
             this.pnChucNangHeThong.SuspendLayout();
             this.SuspendLayout();
@@ -52,41 +52,17 @@
             this.pnChucNangHeThong.Size = new System.Drawing.Size(247, 578);
             this.pnChucNangHeThong.TabIndex = 6;
             // 
-            // btnItemDangXuat
+            // btnItemCauHinhPhanMem
             // 
-            this.btnItemDangXuat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemDangXuat.Location = new System.Drawing.Point(0, 0);
-            this.btnItemDangXuat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemDangXuat.Name = "btnItemDangXuat";
-            this.btnItemDangXuat.Size = new System.Drawing.Size(247, 74);
-            this.btnItemDangXuat.TabIndex = 6;
-            this.btnItemDangXuat.Text = "Đăng Xuất";
-            this.btnItemDangXuat.UseVisualStyleBackColor = true;
-            // 
-            // btnItemDoiMatKhau
-            // 
-            this.btnItemDoiMatKhau.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemDoiMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemDoiMatKhau.Location = new System.Drawing.Point(0, 74);
-            this.btnItemDoiMatKhau.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemDoiMatKhau.Name = "btnItemDoiMatKhau";
-            this.btnItemDoiMatKhau.Size = new System.Drawing.Size(247, 74);
-            this.btnItemDoiMatKhau.TabIndex = 7;
-            this.btnItemDoiMatKhau.Text = "Đổi Mật Khẩu";
-            this.btnItemDoiMatKhau.UseVisualStyleBackColor = true;
-            // 
-            // btnItemCapNhatPhanQuyen
-            // 
-            this.btnItemCapNhatPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemCapNhatPhanQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemCapNhatPhanQuyen.Location = new System.Drawing.Point(0, 148);
-            this.btnItemCapNhatPhanQuyen.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemCapNhatPhanQuyen.Name = "btnItemCapNhatPhanQuyen";
-            this.btnItemCapNhatPhanQuyen.Size = new System.Drawing.Size(247, 74);
-            this.btnItemCapNhatPhanQuyen.TabIndex = 8;
-            this.btnItemCapNhatPhanQuyen.Text = "Cập Nhật Phân Quyền";
-            this.btnItemCapNhatPhanQuyen.UseVisualStyleBackColor = true;
+            this.btnItemCauHinhPhanMem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemCauHinhPhanMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemCauHinhPhanMem.Location = new System.Drawing.Point(0, 296);
+            this.btnItemCauHinhPhanMem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemCauHinhPhanMem.Name = "btnItemCauHinhPhanMem";
+            this.btnItemCauHinhPhanMem.Size = new System.Drawing.Size(247, 74);
+            this.btnItemCauHinhPhanMem.TabIndex = 10;
+            this.btnItemCauHinhPhanMem.Text = "Cấu Hình Phần Mềm";
+            this.btnItemCauHinhPhanMem.UseVisualStyleBackColor = true;
             // 
             // btnItemCauHinhThietBi
             // 
@@ -100,21 +76,46 @@
             this.btnItemCauHinhThietBi.Text = "Cấu Hình Thiết Bị";
             this.btnItemCauHinhThietBi.UseVisualStyleBackColor = true;
             // 
-            // btnItemCauHinhPhanMem
+            // btnItemCapNhatPhanQuyen
             // 
-            this.btnItemCauHinhPhanMem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemCauHinhPhanMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemCauHinhPhanMem.Location = new System.Drawing.Point(0, 296);
-            this.btnItemCauHinhPhanMem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemCauHinhPhanMem.Name = "btnItemCauHinhPhanMem";
-            this.btnItemCauHinhPhanMem.Size = new System.Drawing.Size(247, 74);
-            this.btnItemCauHinhPhanMem.TabIndex = 10;
-            this.btnItemCauHinhPhanMem.Text = "Cấu Hình Phần Mềm";
-            this.btnItemCauHinhPhanMem.UseVisualStyleBackColor = true;
+            this.btnItemCapNhatPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemCapNhatPhanQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemCapNhatPhanQuyen.Location = new System.Drawing.Point(0, 148);
+            this.btnItemCapNhatPhanQuyen.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemCapNhatPhanQuyen.Name = "btnItemCapNhatPhanQuyen";
+            this.btnItemCapNhatPhanQuyen.Size = new System.Drawing.Size(247, 74);
+            this.btnItemCapNhatPhanQuyen.TabIndex = 8;
+            this.btnItemCapNhatPhanQuyen.Text = "Cập Nhật Phân Quyền";
+            this.btnItemCapNhatPhanQuyen.UseVisualStyleBackColor = true;
+            // 
+            // btnItemDoiMatKhau
+            // 
+            this.btnItemDoiMatKhau.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemDoiMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemDoiMatKhau.Location = new System.Drawing.Point(0, 74);
+            this.btnItemDoiMatKhau.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemDoiMatKhau.Name = "btnItemDoiMatKhau";
+            this.btnItemDoiMatKhau.Size = new System.Drawing.Size(247, 74);
+            this.btnItemDoiMatKhau.TabIndex = 7;
+            this.btnItemDoiMatKhau.Text = "Đổi Mật Khẩu";
+            this.btnItemDoiMatKhau.UseVisualStyleBackColor = true;
+            // 
+            // btnItemDangXuat
+            // 
+            this.btnItemDangXuat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemDangXuat.Location = new System.Drawing.Point(0, 0);
+            this.btnItemDangXuat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemDangXuat.Name = "btnItemDangXuat";
+            this.btnItemDangXuat.Size = new System.Drawing.Size(247, 74);
+            this.btnItemDangXuat.TabIndex = 6;
+            this.btnItemDangXuat.Text = "Đăng Xuất";
+            this.btnItemDangXuat.UseVisualStyleBackColor = true;
             // 
             // timerAnimationSlide
             // 
             this.timerAnimationSlide.Interval = 5;
+            this.timerAnimationSlide.Tick += new System.EventHandler(this.timerAnimationSlide_Tick);
             // 
             // MenuChucNangHeThong
             // 
@@ -124,6 +125,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuChucNangHeThong";
             this.Size = new System.Drawing.Size(247, 578);
+            this.Load += new System.EventHandler(this.MenuChucNangHeThong_Load);
             this.pnChucNangHeThong.ResumeLayout(false);
             this.ResumeLayout(false);
 

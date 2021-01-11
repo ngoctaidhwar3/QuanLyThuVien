@@ -60,6 +60,7 @@
             this.btnItemQuanLyDocGia.TabIndex = 26;
             this.btnItemQuanLyDocGia.Text = "Quản Lý Độc Giả";
             this.btnItemQuanLyDocGia.UseVisualStyleBackColor = true;
+            this.btnItemQuanLyDocGia.Click += new System.EventHandler(this.btnItemQuanLyDocGia_Click);
             // 
             // btnItemLapPhieuThuTienPhat
             // 
@@ -72,6 +73,7 @@
             this.btnItemLapPhieuThuTienPhat.TabIndex = 28;
             this.btnItemLapPhieuThuTienPhat.Text = "Lập Phiếu Thu Tiền Phạt";
             this.btnItemLapPhieuThuTienPhat.UseVisualStyleBackColor = true;
+            this.btnItemLapPhieuThuTienPhat.Click += new System.EventHandler(this.btnItemLapPhieuThuTienPhat_Click);
             // 
             // btnItemLapTheDocGia
             // 
@@ -84,10 +86,12 @@
             this.btnItemLapTheDocGia.TabIndex = 27;
             this.btnItemLapTheDocGia.Text = "Lập Thẻ Độc Giả";
             this.btnItemLapTheDocGia.UseVisualStyleBackColor = true;
+            this.btnItemLapTheDocGia.Click += new System.EventHandler(this.btnItemLapTheDocGia_Click);
             // 
             // timerAnimationSlide
             // 
             this.timerAnimationSlide.Interval = 1;
+            this.timerAnimationSlide.Tick += new System.EventHandler(this.timerAnimationSlide_Tick);
             // 
             // MenuChucNangDocGia
             // 
@@ -97,6 +101,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuChucNangDocGia";
             this.Size = new System.Drawing.Size(247, 578);
+            this.Load += new System.EventHandler(this.MenuChucNangDocGia_Load);
             this.pnChucNangDocGia.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 
@@ -84,13 +78,7 @@ namespace GUI.ManHinhChucNang
 
                 switch (result)
                 {
-                    case DialogResult.Abort:
-                        break;
-                    case DialogResult.Ignore:
-                        return;
-                        break;
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         QuanLyThanhLySachBUS quanLyThanhLySachBUS = new QuanLyThanhLySachBUS();

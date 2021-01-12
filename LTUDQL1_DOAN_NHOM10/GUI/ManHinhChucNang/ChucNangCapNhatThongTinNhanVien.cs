@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 
@@ -201,13 +195,7 @@ namespace GUI.ManHinhChucNang
 
                 switch (result)
                 {
-                    case DialogResult.Abort:
-                        break;
-                    case DialogResult.Ignore:
-                        return;
-                        break;
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         BangCapBUS bangCapBUS = new BangCapBUS();
@@ -252,13 +240,7 @@ namespace GUI.ManHinhChucNang
 
                 switch (result)
                 {
-                    case DialogResult.Abort:
-                        break;
-                    case DialogResult.Ignore:
-                        return;
-                        break;
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         ChucVuBUS ChucVuBUS = new ChucVuBUS();
@@ -302,13 +284,7 @@ namespace GUI.ManHinhChucNang
 
                 switch (result)
                 {
-                    case DialogResult.Abort:
-                        break;
-                    case DialogResult.Ignore:
-                        return;
-                        break;
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         BoPhanBUS BoPhanBUS = new BoPhanBUS();
@@ -351,13 +327,7 @@ namespace GUI.ManHinhChucNang
 
                 switch (result)
                 {
-                    case DialogResult.Abort:
-                        break;
-                    case DialogResult.Ignore:
-                        return;
-                        break;
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         TinhTrangNhanVienBUS TinhTrangBUS = new TinhTrangNhanVienBUS();

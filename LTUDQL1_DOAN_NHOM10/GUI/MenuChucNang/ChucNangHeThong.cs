@@ -18,6 +18,14 @@ namespace GUI
             InitializeComponent();
         }
 
+       
+        private void MenuChucNangHeThong_Load(object sender, EventArgs e)
+        {
+            pnChucNangHeThong.Location = new Point(-pnChucNangHeThong.Width, 0);
+
+            timerAnimationSlide.Start();
+        }
+
         private void timerAnimationSlide_Tick(object sender, EventArgs e)
         {
             int X = pnChucNangHeThong.Location.X + Speed;
@@ -40,14 +48,6 @@ namespace GUI
                 Speed--;
                 timerAnimationSlide.Interval = 30;
             }
-
-        }
-
-        private void MenuChucNangHeThong_Load(object sender, EventArgs e)
-        {
-            pnChucNangHeThong.Location = new Point(-pnChucNangHeThong.Width, 0);
-
-            timerAnimationSlide.Start();
         }
 
     }

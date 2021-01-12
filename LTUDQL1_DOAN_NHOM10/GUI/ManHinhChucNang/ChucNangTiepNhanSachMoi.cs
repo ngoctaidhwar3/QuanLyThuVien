@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static GUI.MenuForm;
 using BUS;
@@ -102,8 +96,6 @@ namespace GUI.ManHinhChucNang
             }
         }
 
-        #region Button Events
-
         private void btnDone_Click(object sender, EventArgs e)
         {
             if (!IsValidTextBox())
@@ -152,7 +144,5 @@ namespace GUI.ManHinhChucNang
             txtPosition.Text = "";
             txtPrice.Text = "";
         }
-
-        #endregion
     }
 }

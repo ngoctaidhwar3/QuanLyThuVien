@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static GUI.MenuForm;
 
@@ -32,7 +26,7 @@ namespace GUI
             oldWidthFlowFormWrapper = panel13.Width;
             oldHeightFlowFormWrapper = panel13.Height;
              
-            this.Dock = DockStyle.Top;
+            this.Dock = DockStyle.Fill;
         }
         public MainForm(HamChuyenTrang ChuyenTrangChucNang)
         {
@@ -44,7 +38,7 @@ namespace GUI
             oldWidthFlowFormWrapper = panel13.Width;
             oldHeightFlowFormWrapper = panel13.Height;
 
-            this.Dock = DockStyle.Top;
+            this.Dock = DockStyle.Fill;
 
             this.ChuyenTrangChucNang = ChuyenTrangChucNang;
         }  
@@ -76,8 +70,8 @@ namespace GUI
             {
                 if (itemControl is Panel)
                 {
-                    itemControl.Width += IncreaseWidth / 4;
-                    itemControl.Height += IncreaseHeight / 4;
+                    itemControl.Width += IncreaseWidth / 200;
+                    itemControl.Height += IncreaseHeight / 100;
                 }
 
             }
@@ -100,7 +94,7 @@ namespace GUI
 
             flpnChucNangChinh.Location = new Point(X, Y);
 
-            if (Y >= panel13.Height / 2)
+            if (Y >= panel13.Height / 4)
                 Speed++;
             else
             {

@@ -1,11 +1,6 @@
 ﻿using DTO;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAO
 {
@@ -106,8 +101,14 @@ namespace DAO
             try
             {
                 provider.Connect();
-                string cmd = "USP_FindBook";
-                DataTable dt = provider.SELECT(CommandType.StoredProcedure, cmd,
+                string strSql = "SELECT S.MaSach, S.TenSach, TL.TenTheLoai, T.TenTacGia, N.TenNXB, S.GiaTien, TR.TenTinhTrang, S.Ke "
+                +"FROM SACH S, TACGIA T, THELOAISACH TL, NHAXUATBAN N, TINHTRANGSACH TR "
+                +"WHERE (@name LIKE '' or S.TenSach LIKE '%' + @name + '%') "
+                +"AND (@category_id IS NULL OR S.MaTheLoai = @category_id AND S.MaTheLoai = TL.MaTheLoai) "
+                +"AND (@author_id IS NULL OR S.MaTacGia = @author_id AND S.MaTacGia = T.MaTacGia) "
+                +"AND(@publisher_id IS NULL OR S.MaNXB = @publisher_id AND S.MaNXB = N.MaNXB) "
+                +"AND S.TTS = TR.MaTTSach";
+                DataTable dt = provider.SELECT(CommandType.Text, strSql,
                                     new SqlParameter { ParameterName = "@name", Value = book.Ten },
                                     new SqlParameter { ParameterName = "@category_id", Value = book.MaTheLoai },
                                     new SqlParameter { ParameterName = "@author_id", Value = book.MaTacGia },

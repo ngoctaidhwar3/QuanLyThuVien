@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 
@@ -133,11 +127,9 @@ namespace GUI.ManHinhChucNang
             try
             {
                 DialogResult result = MessageBox.Show("Bạn chắc chắn muốn xóa không ??", "Xóa thể loại " + txtTenTheLoai.Text, MessageBoxButtons.YesNo);
-
                 switch (result)
                 {
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         TheLoaiBUS TheLoaiBUS = new TheLoaiBUS();
@@ -212,7 +204,6 @@ namespace GUI.ManHinhChucNang
                 switch (result)
                 {
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         TacGiaBUS TacGiaBUS = new TacGiaBUS();
@@ -288,7 +279,6 @@ namespace GUI.ManHinhChucNang
                 switch (result)
                 {
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         NXBBUS NXBBUS = new NXBBUS();
@@ -362,7 +352,6 @@ namespace GUI.ManHinhChucNang
                 switch (result)
                 {
                     case DialogResult.No:
-                        return;
                         break;
                     case DialogResult.Yes:
                         TinhTrangSachBUS TTSBUS = new TinhTrangSachBUS();

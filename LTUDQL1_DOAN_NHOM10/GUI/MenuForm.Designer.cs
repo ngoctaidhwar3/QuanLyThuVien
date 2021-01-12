@@ -35,7 +35,6 @@
             this.btnItemThuVien = new System.Windows.Forms.Button();
             this.btnItemDocGia = new System.Windows.Forms.Button();
             this.btnItemSach = new System.Windows.Forms.Button();
-            this.btnItemHeThong = new System.Windows.Forms.Button();
             this.pnWrapperMenu = new System.Windows.Forms.Panel();
             this.pnMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -75,7 +74,7 @@
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Size = new System.Drawing.Size(93, 74);
             this.btnTrangChu.TabIndex = 7;
-            this.btnTrangChu.Text = "Trang chủ";
+            this.btnTrangChu.Text = "Trang chính";
             this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTrangChu.UseVisualStyleBackColor = false;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
@@ -88,7 +87,7 @@
             this.btnItemQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemQuyDinh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnItemQuyDinh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemQuyDinh.Location = new System.Drawing.Point(0, 444);
+            this.btnItemQuyDinh.Location = new System.Drawing.Point(0, 370);
             this.btnItemQuyDinh.Margin = new System.Windows.Forms.Padding(4);
             this.btnItemQuyDinh.Name = "btnItemQuyDinh";
             this.btnItemQuyDinh.Size = new System.Drawing.Size(93, 74);
@@ -106,7 +105,7 @@
             this.btnItemLuuTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemLuuTru.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnItemLuuTru.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemLuuTru.Location = new System.Drawing.Point(0, 370);
+            this.btnItemLuuTru.Location = new System.Drawing.Point(0, 296);
             this.btnItemLuuTru.Margin = new System.Windows.Forms.Padding(4);
             this.btnItemLuuTru.Name = "btnItemLuuTru";
             this.btnItemLuuTru.Size = new System.Drawing.Size(93, 74);
@@ -124,7 +123,7 @@
             this.btnItemImportExport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemImportExport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnItemImportExport.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemImportExport.Location = new System.Drawing.Point(0, 296);
+            this.btnItemImportExport.Location = new System.Drawing.Point(0, 222);
             this.btnItemImportExport.Margin = new System.Windows.Forms.Padding(0);
             this.btnItemImportExport.Name = "btnItemImportExport";
             this.btnItemImportExport.Size = new System.Drawing.Size(93, 74);
@@ -142,7 +141,7 @@
             this.btnItemThuVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemThuVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnItemThuVien.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemThuVien.Location = new System.Drawing.Point(0, 222);
+            this.btnItemThuVien.Location = new System.Drawing.Point(0, 148);
             this.btnItemThuVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnItemThuVien.Name = "btnItemThuVien";
             this.btnItemThuVien.Size = new System.Drawing.Size(93, 74);
@@ -160,7 +159,7 @@
             this.btnItemDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemDocGia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnItemDocGia.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemDocGia.Location = new System.Drawing.Point(0, 148);
+            this.btnItemDocGia.Location = new System.Drawing.Point(0, 74);
             this.btnItemDocGia.Margin = new System.Windows.Forms.Padding(4);
             this.btnItemDocGia.Name = "btnItemDocGia";
             this.btnItemDocGia.Size = new System.Drawing.Size(93, 74);
@@ -178,7 +177,7 @@
             this.btnItemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemSach.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnItemSach.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemSach.Location = new System.Drawing.Point(0, 74);
+            this.btnItemSach.Location = new System.Drawing.Point(0, 0);
             this.btnItemSach.Margin = new System.Windows.Forms.Padding(4);
             this.btnItemSach.Name = "btnItemSach";
             this.btnItemSach.Size = new System.Drawing.Size(93, 74);
@@ -187,26 +186,6 @@
             this.btnItemSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnItemSach.UseVisualStyleBackColor = true;
             this.btnItemSach.Click += new System.EventHandler(this.btnItemSach_Click);
-            // 
-            // btnItemHeThong
-            // 
-            this.btnItemHeThong.BackColor = System.Drawing.Color.Blue;
-            this.btnItemHeThong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemHeThong.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnItemHeThong.FlatAppearance.BorderSize = 0;
-            this.btnItemHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItemHeThong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemHeThong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnItemHeThong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemHeThong.Location = new System.Drawing.Point(0, 0);
-            this.btnItemHeThong.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemHeThong.Name = "btnItemHeThong";
-            this.btnItemHeThong.Size = new System.Drawing.Size(93, 74);
-            this.btnItemHeThong.TabIndex = 0;
-            this.btnItemHeThong.Text = "Hệ thống";
-            this.btnItemHeThong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnItemHeThong.UseVisualStyleBackColor = false;
-            this.btnItemHeThong.Click += new System.EventHandler(this.btnItemHeThong_Click);
             // 
             // pnWrapperMenu
             // 
@@ -217,7 +196,6 @@
             this.pnWrapperMenu.Controls.Add(this.btnItemThuVien);
             this.pnWrapperMenu.Controls.Add(this.btnItemDocGia);
             this.pnWrapperMenu.Controls.Add(this.btnItemSach);
-            this.pnWrapperMenu.Controls.Add(this.btnItemHeThong);
             this.pnWrapperMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnWrapperMenu.Location = new System.Drawing.Point(0, 74);
             this.pnWrapperMenu.Margin = new System.Windows.Forms.Padding(4);
@@ -297,10 +275,10 @@
             // 
             this.pnRight.BackColor = System.Drawing.Color.Blue;
             this.pnRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnRight.Location = new System.Drawing.Point(1244, 0);
+            this.pnRight.Location = new System.Drawing.Point(1273, 0);
             this.pnRight.Margin = new System.Windows.Forms.Padding(4);
             this.pnRight.Name = "pnRight";
-            this.pnRight.Size = new System.Drawing.Size(333, 656);
+            this.pnRight.Size = new System.Drawing.Size(304, 656);
             this.pnRight.TabIndex = 1;
             // 
             // pnMainMenu
@@ -331,12 +309,13 @@
             // 
             // pnContent
             // 
-            this.pnContent.BackColor = System.Drawing.SystemColors.Control;
+            this.pnContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pnContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnContent.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pnContent.Location = new System.Drawing.Point(333, 0);
             this.pnContent.Margin = new System.Windows.Forms.Padding(4);
             this.pnContent.Name = "pnContent";
-            this.pnContent.Size = new System.Drawing.Size(911, 656);
+            this.pnContent.Size = new System.Drawing.Size(940, 656);
             this.pnContent.TabIndex = 2;
             // 
             // panel2
@@ -409,7 +388,6 @@
         private System.Windows.Forms.Button btnItemThuVien;
         private System.Windows.Forms.Button btnItemDocGia;
         private System.Windows.Forms.Button btnItemSach;
-        private System.Windows.Forms.Button btnItemHeThong;
         private System.Windows.Forms.Panel pnWrapperMenu;
         private System.Windows.Forms.Panel pnMenu;
         private System.Windows.Forms.Panel panel1;

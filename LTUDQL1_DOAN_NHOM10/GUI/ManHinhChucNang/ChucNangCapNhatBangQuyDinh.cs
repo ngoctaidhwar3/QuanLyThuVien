@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 
@@ -24,7 +18,6 @@ namespace GUI.ManHinhChucNang
             QuyDinhBUS QuyDinhBUS = new QuyDinhBUS();
             dsQuyDinh = QuyDinhBUS.LayDanhSachQuyDinh();
 
-            //Đổ data vào datagridview
             dgvQuyDinh.DataSource = dsQuyDinh;
         }
 

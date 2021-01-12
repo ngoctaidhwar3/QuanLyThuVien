@@ -2,71 +2,21 @@
 using System;
 using GUI.ManHinhChucNang;
 using GUI.MenuChucNang;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace GUI
 {
     public partial class MenuForm : Form
     {
         public delegate void HamChuyenTrang(int So);
-
-        int HightLight = 1;
-        Color ColorHighLight = Color.FromArgb(0, 158, 250), ColorNotHighLight = Color.FromArgb(0, 127, 216);
         public MenuForm()
         {
             InitializeComponent();
-            HighLightButtonMenu(btnItemHeThong);
 
-            pnChucNang.Controls.Add(new MenuChucNangHeThong());
+            pnChucNang.Controls.Add(new MenuChucNangSach(ChuyenManHinhChucNang));
             pnContent.Controls.Add(new MainForm(ChuyenManHinhChucNang));
             pnRight.Controls.Add(new ManHinhDangNhap());
         }
-       
-        private void UnHighLightButtonMenu(Button btn)
-        {
-            btn.BackColor = ColorNotHighLight;
-        }
-        private void HighLightButtonMenu(object sender)
-        {
 
-
-
-            switch (HightLight)
-            {
-                case 1:
-                    UnHighLightButtonMenu(btnItemHeThong);
-                    break;
-                case 2:
-                    UnHighLightButtonMenu(btnItemSach);
-                    break;
-                case 3:
-                    UnHighLightButtonMenu(btnItemDocGia);
-                    break;
-                case 4:
-                    UnHighLightButtonMenu(btnItemThuVien);
-                    break;
-                case 5:
-                    UnHighLightButtonMenu(btnItemImportExport);
-                    break;
-                case 6:
-                    UnHighLightButtonMenu(btnItemLuuTru);
-                    break;
-                case 7:
-                    UnHighLightButtonMenu(btnItemQuyDinh);
-                    break;
-                default:
-                    break;
-            }
-
-            Button btnMenu = (Button)sender;
-            btnMenu.BackColor = ColorHighLight;
-        }
         private void ChuyenManHinhChucNang(int ChucNang)
         {
             pnContent.Controls.Clear();
@@ -148,14 +98,7 @@ namespace GUI
 
         
 
-        private void btnItemHeThong_Click(object sender, EventArgs e)
-        {
-            HighLightButtonMenu(sender);
-            HightLight = 1;
-
-            pnChucNang.Controls.Clear();
-            pnChucNang.Controls.Add(new MenuChucNangHeThong());
-        }
+        
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
@@ -165,8 +108,6 @@ namespace GUI
 
         private void btnItemLuuTru_Click(object sender, EventArgs e)
         {
-            HighLightButtonMenu(sender);
-            HightLight = 6;
 
             pnChucNang.Controls.Clear();
             pnChucNang.Controls.Add(new MenuChucNangLuuTru());
@@ -174,17 +115,13 @@ namespace GUI
 
         private void btnItemImportExport_Click(object sender, EventArgs e)
         {
-            HighLightButtonMenu(sender);
-            HightLight = 5;
-
+            
             pnChucNang.Controls.Clear();
             pnChucNang.Controls.Add(new MenuChucNangExportImport());
         }
 
         private void btnItemThuVien_Click(object sender, EventArgs e)
         {
-            HighLightButtonMenu(sender);
-            HightLight = 4;
 
             pnChucNang.Controls.Clear();
             pnChucNang.Controls.Add(new MenuChucNangThuVien(ChuyenManHinhChucNang));
@@ -192,8 +129,6 @@ namespace GUI
 
         private void btnItemDocGia_Click(object sender, EventArgs e)
         {
-            HighLightButtonMenu(sender);
-            HightLight = 3;
 
             pnChucNang.Controls.Clear();
             pnChucNang.Controls.Add(new MenuChucNangDocGia(ChuyenManHinhChucNang));
@@ -201,8 +136,6 @@ namespace GUI
 
         private void btnItemSach_Click(object sender, EventArgs e)
         {
-            HighLightButtonMenu(sender);
-            HightLight = 2;
 
             pnChucNang.Controls.Clear();
             pnChucNang.Controls.Add(new MenuChucNangSach(ChuyenManHinhChucNang));
@@ -210,8 +143,6 @@ namespace GUI
 
         private void btnItemQuyDinh_Click(object sender, EventArgs e)
         {
-            HighLightButtonMenu(sender);
-            HightLight = 7;
 
             pnChucNang.Controls.Clear();
             pnChucNang.Controls.Add(new MenuChucNangQuyDinh1(ChuyenTrang, ChuyenManHinhChucNang));

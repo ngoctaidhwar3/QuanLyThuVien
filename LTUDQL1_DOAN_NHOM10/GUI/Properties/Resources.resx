@@ -118,7 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="iconPhieuThuTienPhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconPhieuThuTienPhat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconGhiNhanMatSach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconGhiNhanMatSach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconEx-Import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconEx-Import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconBaoCaoSachTraTre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconBaoCaoSachTraTre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconThuVien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconThuVien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconLapTheDocGia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icon\iconLapTheDocGia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconLapTheDocGia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconLapTheDocGia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconThanhLySach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconThanhLySach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconChoMuonSach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconChoMuonSach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconSach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconTiepNhanNhanVien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconTiepNhanNhanVien2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconLuuTru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconLuuTru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconBaoCaoMuonSachTheoTheLoai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconBaoCaoMuonSachTheoTheLoai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconTiepNhanSach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconTiepNhanSach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNhanTraSach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconNhanTraSach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconTraCuuSach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconTraCuuSach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icondashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icondashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconDocGia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconDocGia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconBaoCaoDocGiaNoTienPhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconBaoCaoDocGiaNoTienPhat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconQuyDinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconQuyDinh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -415,10 +415,29 @@
     <Content Include="Icon\iconTiepNhanSachMoi.png" />
     <Content Include="Icon\iconTraCuuSach.png" />
     <Content Include="Icon\open-book.png" />
+    <None Include="Resources\iconChoMuonSach.png" />
+    <None Include="Resources\iconGhiNhanMatSach.png" />
+    <None Include="Resources\iconBaoCaoMuonSachTheoTheLoai.png" />
+    <None Include="Resources\iconBaoCaoSachTraTre.png" />
+    <None Include="Resources\iconBaoCaoDocGiaNoTienPhat.png" />
+    <None Include="Resources\icondashboard.png" />
+    <None Include="Resources\iconDocGia.png" />
+    <None Include="Resources\iconEx-Import.png" />
     <Content Include="Resources\iconLapTheDocGia.png" />
+    <None Include="Resources\iconTraCuuSach.png" />
+    <None Include="Resources\iconTiepNhanSach.png" />
+    <None Include="Resources\iconLapTheDocGia1.png" />
+    <None Include="Resources\iconNhanTraSach.png" />
+    <None Include="Resources\iconPhieuThuTienPhat.png" />
+    <None Include="Resources\iconThanhLySach.png" />
+    <None Include="Resources\iconSach.png" />
+    <None Include="Resources\iconLuuTru.png" />
+    <None Include="Resources\iconQuyDinh.png" />
     <Content Include="Resources\iconTheDocGia.png" />
+    <None Include="Resources\iconThuVien.png" />
     <Content Include="Resources\iconTiepNhanNhanVien.png" />
     <Content Include="Resources\iconTiepNhanNhanVien1.png" />
+    <None Include="Resources\iconTiepNhanNhanVien2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

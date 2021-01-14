@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\bin\Debug\BUS.dll
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\bin\Debug\BUS.pdb
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\bin\Debug\DAO.dll
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\bin\Debug\DAO.pdb
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\obj\Debug\BUS.dll
+C:\Users\Admin\Desktop\LTUD\QuanLyThuVien\LTUDQL1_DOAN_NHOM10\BUS\obj\Debug\BUS.pdb

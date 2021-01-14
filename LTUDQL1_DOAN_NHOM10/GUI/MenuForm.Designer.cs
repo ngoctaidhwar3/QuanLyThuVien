@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnTrangChu = new System.Windows.Forms.Button();
             this.btnItemQuyDinh = new System.Windows.Forms.Button();
-            this.btnItemLuuTru = new System.Windows.Forms.Button();
-            this.btnItemImportExport = new System.Windows.Forms.Button();
-            this.btnItemThuVien = new System.Windows.Forms.Button();
-            this.btnItemDocGia = new System.Windows.Forms.Button();
-            this.btnItemSach = new System.Windows.Forms.Button();
             this.pnWrapperMenu = new System.Windows.Forms.Panel();
             this.pnMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,6 +43,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbTenPhanMem = new System.Windows.Forms.Label();
             this.pnHeader = new System.Windows.Forms.Panel();
+            this.btnItemLuuTru = new System.Windows.Forms.Button();
+            this.btnItemImportExport = new System.Windows.Forms.Button();
+            this.btnItemThuVien = new System.Windows.Forms.Button();
+            this.btnItemDocGia = new System.Windows.Forms.Button();
+            this.btnItemSach = new System.Windows.Forms.Button();
+            this.btnTrangChu = new System.Windows.Forms.Button();
             this.pnWrapperMenu.SuspendLayout();
             this.pnMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -59,26 +59,6 @@
             this.pnHeader.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnTrangChu
-            // 
-            this.btnTrangChu.BackColor = System.Drawing.Color.Blue;
-            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTrangChu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnTrangChu.FlatAppearance.BorderSize = 0;
-            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrangChu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 0);
-            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(93, 74);
-            this.btnTrangChu.TabIndex = 7;
-            this.btnTrangChu.Text = "Trang chính";
-            this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnTrangChu.UseVisualStyleBackColor = false;
-            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
-            // 
             // btnItemQuyDinh
             // 
             this.btnItemQuyDinh.Dock = System.Windows.Forms.DockStyle.Top;
@@ -86,6 +66,7 @@
             this.btnItemQuyDinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnItemQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemQuyDinh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnItemQuyDinh.Image = global::GUI.Properties.Resources.iconQuyDinh;
             this.btnItemQuyDinh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnItemQuyDinh.Location = new System.Drawing.Point(0, 370);
             this.btnItemQuyDinh.Margin = new System.Windows.Forms.Padding(4);
@@ -96,96 +77,6 @@
             this.btnItemQuyDinh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnItemQuyDinh.UseVisualStyleBackColor = true;
             this.btnItemQuyDinh.Click += new System.EventHandler(this.btnItemQuyDinh_Click);
-            // 
-            // btnItemLuuTru
-            // 
-            this.btnItemLuuTru.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemLuuTru.FlatAppearance.BorderSize = 0;
-            this.btnItemLuuTru.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItemLuuTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemLuuTru.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnItemLuuTru.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemLuuTru.Location = new System.Drawing.Point(0, 296);
-            this.btnItemLuuTru.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemLuuTru.Name = "btnItemLuuTru";
-            this.btnItemLuuTru.Size = new System.Drawing.Size(93, 74);
-            this.btnItemLuuTru.TabIndex = 5;
-            this.btnItemLuuTru.Text = "Lưu trữ";
-            this.btnItemLuuTru.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnItemLuuTru.UseVisualStyleBackColor = true;
-            this.btnItemLuuTru.Click += new System.EventHandler(this.btnItemLuuTru_Click);
-            // 
-            // btnItemImportExport
-            // 
-            this.btnItemImportExport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemImportExport.FlatAppearance.BorderSize = 0;
-            this.btnItemImportExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItemImportExport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemImportExport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnItemImportExport.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemImportExport.Location = new System.Drawing.Point(0, 222);
-            this.btnItemImportExport.Margin = new System.Windows.Forms.Padding(0);
-            this.btnItemImportExport.Name = "btnItemImportExport";
-            this.btnItemImportExport.Size = new System.Drawing.Size(93, 74);
-            this.btnItemImportExport.TabIndex = 4;
-            this.btnItemImportExport.Text = "Ex-Import";
-            this.btnItemImportExport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnItemImportExport.UseVisualStyleBackColor = true;
-            this.btnItemImportExport.Click += new System.EventHandler(this.btnItemImportExport_Click);
-            // 
-            // btnItemThuVien
-            // 
-            this.btnItemThuVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemThuVien.FlatAppearance.BorderSize = 0;
-            this.btnItemThuVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItemThuVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemThuVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnItemThuVien.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemThuVien.Location = new System.Drawing.Point(0, 148);
-            this.btnItemThuVien.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemThuVien.Name = "btnItemThuVien";
-            this.btnItemThuVien.Size = new System.Drawing.Size(93, 74);
-            this.btnItemThuVien.TabIndex = 3;
-            this.btnItemThuVien.Text = "Thư viện";
-            this.btnItemThuVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnItemThuVien.UseVisualStyleBackColor = true;
-            this.btnItemThuVien.Click += new System.EventHandler(this.btnItemThuVien_Click);
-            // 
-            // btnItemDocGia
-            // 
-            this.btnItemDocGia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemDocGia.FlatAppearance.BorderSize = 0;
-            this.btnItemDocGia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItemDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemDocGia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnItemDocGia.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemDocGia.Location = new System.Drawing.Point(0, 74);
-            this.btnItemDocGia.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemDocGia.Name = "btnItemDocGia";
-            this.btnItemDocGia.Size = new System.Drawing.Size(93, 74);
-            this.btnItemDocGia.TabIndex = 2;
-            this.btnItemDocGia.Text = "Đọc giả";
-            this.btnItemDocGia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnItemDocGia.UseVisualStyleBackColor = true;
-            this.btnItemDocGia.Click += new System.EventHandler(this.btnItemDocGia_Click);
-            // 
-            // btnItemSach
-            // 
-            this.btnItemSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnItemSach.FlatAppearance.BorderSize = 0;
-            this.btnItemSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemSach.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnItemSach.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnItemSach.Location = new System.Drawing.Point(0, 0);
-            this.btnItemSach.Margin = new System.Windows.Forms.Padding(4);
-            this.btnItemSach.Name = "btnItemSach";
-            this.btnItemSach.Size = new System.Drawing.Size(93, 74);
-            this.btnItemSach.TabIndex = 1;
-            this.btnItemSach.Text = "Sách";
-            this.btnItemSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnItemSach.UseVisualStyleBackColor = true;
-            this.btnItemSach.Click += new System.EventHandler(this.btnItemSach_Click);
             // 
             // pnWrapperMenu
             // 
@@ -354,6 +245,122 @@
             this.pnHeader.Name = "pnHeader";
             this.pnHeader.Size = new System.Drawing.Size(1577, 75);
             this.pnHeader.TabIndex = 3;
+            // 
+            // btnItemLuuTru
+            // 
+            this.btnItemLuuTru.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemLuuTru.FlatAppearance.BorderSize = 0;
+            this.btnItemLuuTru.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItemLuuTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemLuuTru.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnItemLuuTru.Image = global::GUI.Properties.Resources.iconLuuTru;
+            this.btnItemLuuTru.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnItemLuuTru.Location = new System.Drawing.Point(0, 296);
+            this.btnItemLuuTru.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemLuuTru.Name = "btnItemLuuTru";
+            this.btnItemLuuTru.Size = new System.Drawing.Size(93, 74);
+            this.btnItemLuuTru.TabIndex = 5;
+            this.btnItemLuuTru.Text = "Lưu trữ";
+            this.btnItemLuuTru.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnItemLuuTru.UseVisualStyleBackColor = true;
+            this.btnItemLuuTru.Click += new System.EventHandler(this.btnItemLuuTru_Click);
+            // 
+            // btnItemImportExport
+            // 
+            this.btnItemImportExport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemImportExport.FlatAppearance.BorderSize = 0;
+            this.btnItemImportExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItemImportExport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemImportExport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnItemImportExport.Image = global::GUI.Properties.Resources.iconEx_Import;
+            this.btnItemImportExport.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnItemImportExport.Location = new System.Drawing.Point(0, 222);
+            this.btnItemImportExport.Margin = new System.Windows.Forms.Padding(0);
+            this.btnItemImportExport.Name = "btnItemImportExport";
+            this.btnItemImportExport.Size = new System.Drawing.Size(93, 74);
+            this.btnItemImportExport.TabIndex = 4;
+            this.btnItemImportExport.Text = "Ex-Import";
+            this.btnItemImportExport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnItemImportExport.UseVisualStyleBackColor = true;
+            this.btnItemImportExport.Click += new System.EventHandler(this.btnItemImportExport_Click);
+            // 
+            // btnItemThuVien
+            // 
+            this.btnItemThuVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemThuVien.FlatAppearance.BorderSize = 0;
+            this.btnItemThuVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItemThuVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemThuVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnItemThuVien.Image = global::GUI.Properties.Resources.iconThuVien;
+            this.btnItemThuVien.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnItemThuVien.Location = new System.Drawing.Point(0, 148);
+            this.btnItemThuVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemThuVien.Name = "btnItemThuVien";
+            this.btnItemThuVien.Size = new System.Drawing.Size(93, 74);
+            this.btnItemThuVien.TabIndex = 3;
+            this.btnItemThuVien.Text = "Thư viện";
+            this.btnItemThuVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnItemThuVien.UseVisualStyleBackColor = true;
+            this.btnItemThuVien.Click += new System.EventHandler(this.btnItemThuVien_Click);
+            // 
+            // btnItemDocGia
+            // 
+            this.btnItemDocGia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemDocGia.FlatAppearance.BorderSize = 0;
+            this.btnItemDocGia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItemDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemDocGia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnItemDocGia.Image = global::GUI.Properties.Resources.iconDocGia;
+            this.btnItemDocGia.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnItemDocGia.Location = new System.Drawing.Point(0, 74);
+            this.btnItemDocGia.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemDocGia.Name = "btnItemDocGia";
+            this.btnItemDocGia.Size = new System.Drawing.Size(93, 74);
+            this.btnItemDocGia.TabIndex = 2;
+            this.btnItemDocGia.Text = "Đọc giả";
+            this.btnItemDocGia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnItemDocGia.UseVisualStyleBackColor = true;
+            this.btnItemDocGia.Click += new System.EventHandler(this.btnItemDocGia_Click);
+            // 
+            // btnItemSach
+            // 
+            this.btnItemSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItemSach.FlatAppearance.BorderSize = 0;
+            this.btnItemSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemSach.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnItemSach.Image = global::GUI.Properties.Resources.iconSach;
+            this.btnItemSach.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnItemSach.Location = new System.Drawing.Point(0, 0);
+            this.btnItemSach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItemSach.Name = "btnItemSach";
+            this.btnItemSach.Size = new System.Drawing.Size(93, 74);
+            this.btnItemSach.TabIndex = 1;
+            this.btnItemSach.Text = "Sách";
+            this.btnItemSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnItemSach.UseVisualStyleBackColor = true;
+            this.btnItemSach.Click += new System.EventHandler(this.btnItemSach_Click);
+            // 
+            // btnTrangChu
+            // 
+            this.btnTrangChu.BackColor = System.Drawing.Color.Blue;
+            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTrangChu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnTrangChu.FlatAppearance.BorderSize = 0;
+            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTrangChu.Image = global::GUI.Properties.Resources.icondashboard;
+            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 0);
+            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(93, 74);
+            this.btnTrangChu.TabIndex = 7;
+            this.btnTrangChu.Text = "Trang chính";
+            this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // MenuForm
             // 

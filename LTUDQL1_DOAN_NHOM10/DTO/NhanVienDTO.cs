@@ -18,7 +18,6 @@ namespace DTO
             get { return _MaNhanVien; }
             set { _MaNhanVien = value; }
         }
- 
 
         public string HoTenNV
         {

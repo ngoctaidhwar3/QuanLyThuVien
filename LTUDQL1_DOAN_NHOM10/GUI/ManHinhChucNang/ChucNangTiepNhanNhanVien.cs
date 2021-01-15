@@ -100,17 +100,5 @@ namespace GUI.ManHinhChucNang
                 MessageBox.Show("Thêm thất bại. Lỗi:" + ex.ToString());
             }
         }
-
-        private void btnChupHinh_Click(object sender, EventArgs e)
-        {
-
-            MessageBox.Show("Chức năng chưa được hỗ trợ");
-        }
-
-        private void btnChonHinh_Click(object sender, EventArgs e)
-        {
-
-            MessageBox.Show("Chức năng chưa được hỗ trợ");
-        }
     }
 }

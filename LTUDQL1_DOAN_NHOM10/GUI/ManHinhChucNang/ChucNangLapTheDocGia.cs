@@ -96,16 +96,7 @@ namespace GUI.ManHinhChucNang
             }
         }
 
-        private void btnChonHinh_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng đang trong giai đoạn bảo trì");
-        }
-
-        private void btnChupHinh_Click(object sender, EventArgs e)
-        {
-
-            MessageBox.Show("Chức năng đang trong giai đoạn bảo trì");
-        }
+  
 
         private void btnThoat_Click(object sender, EventArgs e)
         {

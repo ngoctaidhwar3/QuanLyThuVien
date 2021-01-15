@@ -9,7 +9,7 @@ namespace DTO
         public string MaNV { get; set; }
         public string MaPhieuThu { get; set; }
         public int TienThu { get; set; }
-        public string NgayThu { get; set; }
-        public int TienConLai { get; set; }
+        public string NgayThu { get; set;  }
+        public int TienConLai { get; set;  }
     }
 }

@@ -7,9 +7,9 @@ namespace DTO
 {
     public class ChiTietPhieuThanhLySachDTO
     {
-        private string MaPhieuThanhLy{get;set;}
-        private string MaSach { get; set; }
-        private string MaLyDoThanhLy { get; set; }
+        public string MaPhieuThanhLy{get;set;}
+        public string MaSach { get; set; }
+        public string MaLyDoThanhLy { get; set; }
 
     }
 }

@@ -3,15 +3,15 @@ namespace DTO
 {
     public class NhanVienDTO
     {
-        private string _MaNhanVien { get; set; }
-        private string _HoTenNV { get; set; }
-        private string _DiaChi { get; set; }
-        private string _NgaySinh { get; set; }
-        private string _BangCap { get; set; }
-        private string _ChucVu { get; set; }
-        private string _BoPhan { get; set; }
-        private string _DienThoai { get; set; }
-        private string _MaTTNV { get; set; }
+        public string MaNhanVien { get; set; }
+        public string HoTenNV { get; set; }
+        public string DiaChi { get; set; }
+        public string NgaySinh { get; set; }
+        public string BangCap { get; set; }
+        public string ChucVu { get; set; }
+        public string BoPhan { get; set; }
+        public string DienThoai { get; set; }
+        public string MaTTNV { get; set; }
 
  
     }

@@ -3,16 +3,16 @@ namespace DTO
 {
     public class DocGiaDTO
     {
-        private string _MaDocGia { get; set; }
-        private string _HoTenDG { get; set; }
-        private string _NgaySinh { get; set; }
-        private string _DiaChi { get; set; }
-        private string _Email { get; set; }
-        private float _TongNo { get; set; }
-        private string _NgayLapThe { get; set; }
-        private string _NgayHetHan { get; set; }
-        private string _NvLapThe { get; set; }
-        private string _MaLoaiDG { get; set; }
-        private string _TTDG { get; set; }
+        public string MaDocGia { get; set; }
+        public string HoTenDG { get; set; }
+        public string NgaySinh { get; set; }
+        public string DiaChi { get; set; }
+        public string Email { get; set; }
+        public float TongNo { get; set; }
+        public string NgayLapThe { get; set; }
+        public string NgayHetHan { get; set; }
+        public string NvLapThe { get; set; }
+        public string MaLoaiDG { get; set; }
+        public string TTDG { get; set; }
     }
 }

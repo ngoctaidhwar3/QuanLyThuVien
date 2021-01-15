@@ -4,10 +4,10 @@ namespace DTO
 {
     public class CT_PhieuTraDTO
     {
-        public string maPT {get;set;}
-        public string maSach { get; set;}
-        DateTime ngayMuon { get; set; }
-        int soNgayMuon { get; set; }
-        float tienPhat { get;set }
+        public string MaPT {get;set;}
+        public string MaSach { get; set;}
+        public DateTime NgayMuon { get; set; }
+        public int SoNgayMuon { get; set; }
+        public float TienPhat { get; set; }
     }
 }

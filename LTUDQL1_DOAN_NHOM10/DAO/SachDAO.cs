@@ -62,7 +62,7 @@ namespace DAO
         }
 
        
-        public static int AddANewBook(Sach book)
+        public static int AddANewBook(SachDTO book)
         {
             int nRow = 0;
             try
@@ -96,7 +96,7 @@ namespace DAO
             return nRow;
         }
 
-        public static DataTable FindBook(Sach book)
+        public static DataTable FindBook(SachDTO book)
         {
             try
             {

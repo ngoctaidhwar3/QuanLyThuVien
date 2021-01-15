@@ -20,12 +20,12 @@ namespace BUS
             return SachDAO.GetDatasByStoredProcedure(cmd);
         }
 
-        public static int AddANewBook(Sach book)
+        public static int AddANewBook(SachDTO book)
         {
             return SachDAO.AddANewBook(book);
         }
 
-        public static DataTable FindBook(Sach book)
+        public static DataTable FindBook(SachDTO book)
         {
             return SachDAO.FindBook(book);
         }

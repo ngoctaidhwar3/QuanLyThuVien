@@ -13,8 +13,8 @@ namespace GUI.ManHinhChucNang
         GhiNhanMatSachDTO gnms = new GhiNhanMatSachDTO();
         GhiNhanMatSachBUS bus = new GhiNhanMatSachBUS();
 
-        List<SachDocGiaPhieuMuon> listDG = new List<SachDocGiaPhieuMuon>();
-        SachDocGiaPhieuMuon pmdocgia = new SachDocGiaPhieuMuon();
+        List<SachDocGiaPhieuMuonDTO> listDG = new List<SachDocGiaPhieuMuonDTO>();
+        SachDocGiaPhieuMuonDTO pmdocgia = new SachDocGiaPhieuMuonDTO();
         HamChuyenTrang ChuyenTrangChu;
         public ManHinhChucNangGhiNhanMatSach(HamChuyenTrang ChuyenTrangChu)
         {
@@ -23,7 +23,7 @@ namespace GUI.ManHinhChucNang
             dt = bus.SachDocGia();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                SachDocGiaPhieuMuon temp = new SachDocGiaPhieuMuon();
+                SachDocGiaPhieuMuonDTO temp = new SachDocGiaPhieuMuonDTO();
                 temp.MaDG = dt.Rows[i]["MaDG"].ToString();
                 temp.MaPM = dt.Rows[i]["MaPM"].ToString();
                 temp.MaSach = dt.Rows[i]["MaSach"].ToString();

@@ -37,7 +37,7 @@ namespace GUI.ManHinhChucNang
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            DTO.Sach book = new DTO.Sach
+            DTO.SachDTO book = new DTO.SachDTO
             {
                 Ten = txtName.Text == String.Empty ? String.Empty : txtName.Text,
                 MaTheLoai = cbCategory.SelectedValue.ToString(),

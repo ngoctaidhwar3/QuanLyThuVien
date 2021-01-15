@@ -61,8 +61,8 @@
     <Compile Include="PhieuThuTienPhatDTO.cs" />
     <Compile Include="PhieuTraDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sach.cs" />
-    <Compile Include="SachDocGiaPhieuMuon.cs" />
+    <Compile Include="SachDTO.cs" />
+    <Compile Include="SachDocGiaPhieuMuonDTO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

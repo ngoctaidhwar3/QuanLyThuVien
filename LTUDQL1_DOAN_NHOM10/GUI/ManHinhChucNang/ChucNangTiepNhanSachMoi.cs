@@ -103,7 +103,7 @@ namespace GUI.ManHinhChucNang
                 return;
             }
 
-            DTO.Sach book = new DTO.Sach
+            DTO.SachDTO book = new DTO.SachDTO
             {
                 Ma = GenerateBookId(),
                 Ten = txtTitle.Text,

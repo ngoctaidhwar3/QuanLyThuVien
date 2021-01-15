@@ -111,7 +111,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(876, 352);
             this.panel13.TabIndex = 4;
-            this.panel13.SizeChanged += new System.EventHandler(this.panel13_SizeChanged);
+            //this.panel13.SizeChanged += new System.EventHandler(this.panel13_SizeChanged);
             // 
             // flpnChucNangChinh
             // 
@@ -133,7 +133,7 @@
             this.flpnChucNangChinh.Name = "flpnChucNangChinh";
             this.flpnChucNangChinh.Size = new System.Drawing.Size(848, 352);
             this.flpnChucNangChinh.TabIndex = 1;
-            this.flpnChucNangChinh.SizeChanged += new System.EventHandler(this.flpnChucNangChinh_SizeChanged);
+            //this.flpnChucNangChinh.SizeChanged += new System.EventHandler(this.flpnChucNangChinh_SizeChanged);
             // 
             // panel1
             // 

@@ -26,7 +26,7 @@ namespace GUI
             oldWidthFlowFormWrapper = panel13.Width;
             oldHeightFlowFormWrapper = panel13.Height;
              
-            this.Dock = DockStyle.Fill;
+            this.Dock = DockStyle.None;
         }
         public MainForm(HamChuyenTrang ChuyenTrangChucNang)
         {
@@ -45,41 +45,41 @@ namespace GUI
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            flpnChucNangChinh.Location = new Point(0, panel13.Height);
-            timerAnimation.Start();
+            //flpnChucNangChinh.Location = new Point(0, panel13.Height);
+            //timerAnimation.Start();
         }
 
-        private void panel13_SizeChanged(object sender, EventArgs e)
-        {
-            int IncreaseWidth = panel13.Width - oldWidthFlowFormWrapper;
-            int IncreaseHeight = panel13.Height - oldHeightFlowFormWrapper;
+        //private void panel13_SizeChanged(object sender, EventArgs e)
+        //{
+        //    int IncreaseWidth = panel13.Width - oldWidthFlowFormWrapper;
+        //    int IncreaseHeight = panel13.Height - oldHeightFlowFormWrapper;
 
-            flpnChucNangChinh.Width += IncreaseWidth;
-            flpnChucNangChinh.Height += IncreaseHeight;
+        //    flpnChucNangChinh.Width += IncreaseWidth;
+        //    flpnChucNangChinh.Height += IncreaseHeight;
 
-            oldWidthFlowFormWrapper = panel13.Width;
-            oldHeightFlowFormWrapper = panel13.Height;
-        }
+        //    oldWidthFlowFormWrapper = panel13.Width;
+        //    oldHeightFlowFormWrapper = panel13.Height;
+        //}
 
-        private void flpnChucNangChinh_SizeChanged(object sender, EventArgs e)
-        {
-            int IncreaseWidth = flpnChucNangChinh.Width - oldWidthFlowForm;
-            int IncreaseHeight = flpnChucNangChinh.Height - oldHeightFlowForm;
+        //private void flpnChucNangChinh_SizeChanged(object sender, EventArgs e)
+        //{
+        //    int IncreaseWidth = flpnChucNangChinh.Width - oldWidthFlowForm;
+        //    int IncreaseHeight = flpnChucNangChinh.Height - oldHeightFlowForm;
 
-            foreach (Control itemControl in flpnChucNangChinh.Controls)
-            {
-                if (itemControl is Panel)
-                {
-                    itemControl.Width += IncreaseWidth / 200;
-                    itemControl.Height += IncreaseHeight / 100;
-                }
+        //    foreach (Control itemControl in flpnChucNangChinh.Controls)
+        //    {
+        //        if (itemControl is Panel)
+        //        {
+        //            itemControl.Width += IncreaseWidth / 10;
+        //            itemControl.Height += IncreaseHeight / 10;
+        //        }
 
-            }
+        //    }
 
 
-            oldWidthFlowForm = flpnChucNangChinh.Width;
-            oldHeightFlowForm = flpnChucNangChinh.Height;
-        }
+        //    oldWidthFlowForm = flpnChucNangChinh.Width;
+        //    oldHeightFlowForm = flpnChucNangChinh.Height;
+        //}
 
         private void timerAnimation_Tick(object sender, EventArgs e)
         {

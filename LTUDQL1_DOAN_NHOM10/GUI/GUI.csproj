@@ -191,12 +191,6 @@
     <Compile Include="MenuChucNang\ChucNangExportImport.Designer.cs">
       <DependentUpon>ChucNangExportImport.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuChucNang\ChucNangHeThong.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MenuChucNang\ChucNangHeThong.Designer.cs">
-      <DependentUpon>ChucNangHeThong.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuChucNang\ChucNangLuuTru.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -300,9 +294,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuChucNang\ChucNangExportImport.resx">
       <DependentUpon>ChucNangExportImport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuChucNang\ChucNangHeThong.resx">
-      <DependentUpon>ChucNangHeThong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuChucNang\ChucNangLuuTru.resx">
       <DependentUpon>ChucNangLuuTru.cs</DependentUpon>

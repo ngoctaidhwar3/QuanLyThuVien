@@ -28,21 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtMaPhieuMuon = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtNgaySinh = new System.Windows.Forms.TextBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLapPhieu = new System.Windows.Forms.Button();
-            this.dtgrvPM = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtNgayMuon = new System.Windows.Forms.DateTimePicker();
             this.txtLoaiDocGia = new System.Windows.Forms.TextBox();
             this.txtHoTenDG = new System.Windows.Forms.TextBox();
@@ -53,6 +47,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtgrvPM = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrvPM)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,78 +108,6 @@
             this.btnLapPhieu.Text = "Lập Phiếu";
             this.btnLapPhieu.UseVisualStyleBackColor = true;
             this.btnLapPhieu.Click += new System.EventHandler(this.btnLapPhieu_Click);
-            // 
-            // dtgrvPM
-            // 
-            this.dtgrvPM.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgrvPM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrvPM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.MaSach,
-            this.TenSach,
-            this.TheLoai,
-            this.TacGia});
-            this.dtgrvPM.Location = new System.Drawing.Point(77, 280);
-            this.dtgrvPM.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgrvPM.Name = "dtgrvPM";
-            this.dtgrvPM.RowHeadersVisible = false;
-            this.dtgrvPM.RowHeadersWidth = 51;
-            this.dtgrvPM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dtgrvPM.Size = new System.Drawing.Size(757, 251);
-            this.dtgrvPM.TabIndex = 29;
-            this.dtgrvPM.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvPM_RowLeave);
-            // 
-            // STT
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.NullValue = "1";
-            this.STT.DefaultCellStyle = dataGridViewCellStyle1;
-            this.STT.FillWeight = 50.76142F;
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
-            // 
-            // MaSach
-            // 
-            this.MaSach.DataPropertyName = "MaSach";
-            this.MaSach.FillWeight = 112.3096F;
-            this.MaSach.HeaderText = "Mã sách";
-            this.MaSach.MinimumWidth = 6;
-            this.MaSach.Name = "MaSach";
-            // 
-            // TenSach
-            // 
-            this.TenSach.DataPropertyName = "TenSach";
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TenSach.DefaultCellStyle = dataGridViewCellStyle2;
-            this.TenSach.FillWeight = 112.3096F;
-            this.TenSach.HeaderText = "Tên sách";
-            this.TenSach.MinimumWidth = 6;
-            this.TenSach.Name = "TenSach";
-            this.TenSach.ReadOnly = true;
-            // 
-            // TheLoai
-            // 
-            this.TheLoai.DataPropertyName = "TenTheLoai";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TheLoai.DefaultCellStyle = dataGridViewCellStyle3;
-            this.TheLoai.FillWeight = 112.3096F;
-            this.TheLoai.HeaderText = "Thể loại";
-            this.TheLoai.MinimumWidth = 6;
-            this.TheLoai.Name = "TheLoai";
-            this.TheLoai.ReadOnly = true;
-            // 
-            // TacGia
-            // 
-            this.TacGia.DataPropertyName = "TenTacGia";
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TacGia.DefaultCellStyle = dataGridViewCellStyle4;
-            this.TacGia.FillWeight = 112.3096F;
-            this.TacGia.HeaderText = "Tác giả";
-            this.TacGia.MinimumWidth = 6;
-            this.TacGia.Name = "TacGia";
-            this.TacGia.ReadOnly = true;
             // 
             // dtNgayMuon
             // 
@@ -284,16 +212,92 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Phiếu Mượn Sách";
             // 
+            // dtgrvPM
+            // 
+            this.dtgrvPM.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgrvPM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrvPM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.MaSach,
+            this.TenSach,
+            this.TheLoai,
+            this.TacGia});
+            this.dtgrvPM.Location = new System.Drawing.Point(76, 283);
+            this.dtgrvPM.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgrvPM.Name = "dtgrvPM";
+            this.dtgrvPM.RowHeadersVisible = false;
+            this.dtgrvPM.RowHeadersWidth = 51;
+            this.dtgrvPM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dtgrvPM.Size = new System.Drawing.Size(757, 251);
+            this.dtgrvPM.TabIndex = 35;
+            this.dtgrvPM.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvPM_CellDoubleClick);
+            this.dtgrvPM.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvPM_CellEndEdit);
+            this.dtgrvPM.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvPM_RowLeave);
+            this.dtgrvPM.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dtgrvPM_RowsAdded);
+            this.dtgrvPM.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dtgrvPM_RowsRemoved);
+            // 
+            // STT
+            // 
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle25.NullValue = "1";
+            this.STT.DefaultCellStyle = dataGridViewCellStyle25;
+            this.STT.FillWeight = 50.76142F;
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            this.STT.ReadOnly = true;
+            // 
+            // MaSach
+            // 
+            this.MaSach.DataPropertyName = "MaSach";
+            this.MaSach.FillWeight = 112.3096F;
+            this.MaSach.HeaderText = "Mã sách";
+            this.MaSach.MinimumWidth = 6;
+            this.MaSach.Name = "MaSach";
+            // 
+            // TenSach
+            // 
+            this.TenSach.DataPropertyName = "TenSach";
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TenSach.DefaultCellStyle = dataGridViewCellStyle26;
+            this.TenSach.FillWeight = 112.3096F;
+            this.TenSach.HeaderText = "Tên sách";
+            this.TenSach.MinimumWidth = 6;
+            this.TenSach.Name = "TenSach";
+            this.TenSach.ReadOnly = true;
+            // 
+            // TheLoai
+            // 
+            this.TheLoai.DataPropertyName = "TenTheLoai";
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TheLoai.DefaultCellStyle = dataGridViewCellStyle27;
+            this.TheLoai.FillWeight = 112.3096F;
+            this.TheLoai.HeaderText = "Thể loại";
+            this.TheLoai.MinimumWidth = 6;
+            this.TheLoai.Name = "TheLoai";
+            this.TheLoai.ReadOnly = true;
+            // 
+            // TacGia
+            // 
+            this.TacGia.DataPropertyName = "TenTacGia";
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TacGia.DefaultCellStyle = dataGridViewCellStyle28;
+            this.TacGia.FillWeight = 112.3096F;
+            this.TacGia.HeaderText = "Tác giả";
+            this.TacGia.MinimumWidth = 6;
+            this.TacGia.Name = "TacGia";
+            this.TacGia.ReadOnly = true;
+            // 
             // ManHinhChucNangChoMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dtgrvPM);
             this.Controls.Add(this.txtMaPhieuMuon);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNgaySinh);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLapPhieu);
-            this.Controls.Add(this.dtgrvPM);
             this.Controls.Add(this.dtNgayMuon);
             this.Controls.Add(this.txtLoaiDocGia);
             this.Controls.Add(this.txtHoTenDG);
@@ -321,12 +325,6 @@
         private System.Windows.Forms.TextBox txtNgaySinh;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnLapPhieu;
-        private System.Windows.Forms.DataGridView dtgrvPM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TheLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TacGia;
         private System.Windows.Forms.DateTimePicker dtNgayMuon;
         private System.Windows.Forms.TextBox txtLoaiDocGia;
         private System.Windows.Forms.TextBox txtHoTenDG;
@@ -337,5 +335,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dtgrvPM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TheLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TacGia;
     }
 }

@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using DTO;
 using BUS;
 using static GUI.MenuForm;
+using BUS.DocGiaBUS;
 
 namespace GUI.ManHinhChucNang
 {
@@ -33,7 +34,29 @@ namespace GUI.ManHinhChucNang
 
             this.ChuyenTrangChu = ChuyenTrangChu;
         }
-
+        AutoCompleteStringCollection LoadSuggestTextBox(DataTable dt,string Key)
+        {
+            string[] str = new string[dt.DefaultView.Count - 1];
+            AutoCompleteStringCollection autoComplete = new AutoCompleteStringCollection();
+            for (int i = 0; i < dt.DefaultView.Count - 1; i++)
+            {
+                str[i] = dt.Rows[i][Key].ToString();
+            }
+            autoComplete.AddRange(str);
+            return autoComplete;
+        }
+        DataTable LoadDsDG()
+        {
+            int rs = 0;
+            DocGiaBUS bus = new DocGiaBUS();
+            return bus.LayDanhSachDocGia(rs);
+        }
+        DataTable LoadDsSach()
+        {
+            SachBUS bus = new SachBUS();
+            string str = "SELECT MaSach FROM SACH";
+            return bus.GetDatasByCommand(str);
+        }
         private void txtMaSach_Leave(object sender, EventArgs e)
         {
             if (txtMaSach.Text == "")
@@ -189,6 +212,23 @@ namespace GUI.ManHinhChucNang
         private void btnHuy_Click(object sender, EventArgs e)
         {
             this.ChuyenTrangChu(0);
+        }
+
+        private void ManHinhChucNangGhiNhanMatSach_Load(object sender, EventArgs e)
+        {
+            txtMaDG.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            txtMaDG.AutoCompleteMode = AutoCompleteMode.Suggest;
+            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+            DataTable dtDsDG = LoadDsDG();
+            collection = LoadSuggestTextBox(dtDsDG,"MaDocGia");
+            txtMaDG.AutoCompleteCustomSource = collection;
+
+            txtMaSach.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            txtMaSach.AutoCompleteMode = AutoCompleteMode.Suggest;
+            
+            DataTable dtDsSach = LoadDsSach();
+            collection = LoadSuggestTextBox(dtDsSach,"MaSach");
+            txtMaSach.AutoCompleteCustomSource = collection;
         }
     }
 }

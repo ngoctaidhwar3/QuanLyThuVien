@@ -30,7 +30,7 @@ namespace DAO
         {
             try
             {
-                string strSQL = "SELECT COUNT(*) AS N'Ton Tai' FROM PHIEUMUONSACH PM" +
+                string strSQL = "SELECT COUNT(*) AS N'TonTai' FROM PHIEUMUONSACH PM" +
                                   " WHERE PM.MaDG = @MaDG AND PM.MaPM NOT IN (SELECT PT.MaPM FROM PHIEUTRASACH PT)";
 
                 provider.Connect();

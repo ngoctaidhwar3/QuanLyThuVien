@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 using BUS;
+using BUS.DocGiaBUS;
 using DTO;
 using static GUI.MenuForm;
 
@@ -25,21 +26,44 @@ namespace GUI.ManHinhChucNang
         }
 
         
-
+      
         private void ManHinhChucNangChoMuonSach_Load(object sender, EventArgs e)
         {
             LoadMaPhieuMuon();
             QuanLyPhieuMuonBUS BUS = new QuanLyPhieuMuonBUS();
             DataTable dtQuyDinh = BUS.LayQuyDinh();
+            txtMaDG.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            txtMaDG.AutoCompleteMode = AutoCompleteMode.Suggest;
+            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+            DataTable dtDsDG = LoadDsDG();
+            collection = LoadSuggestTextBox(dtDsDG);
+            txtMaDG.AutoCompleteCustomSource = collection;
             MaxSach = int.Parse(dtQuyDinh.Rows[0]["SoSachMuonToiDa"].ToString());
             MaxNgayMuon = int.Parse(dtQuyDinh.Rows[0]["SoNgayMuonToiDa"].ToString());
+        }
+        AutoCompleteStringCollection LoadSuggestTextBox(DataTable dt)
+        {
+            string[] str = new string[dt.DefaultView.Count - 1];
+            AutoCompleteStringCollection autoComplete = new AutoCompleteStringCollection();
+            for (int i = 0; i < dt.DefaultView.Count - 1; i++)
+            {
+                str[i] = dt.Rows[i]["MaDocGia"].ToString();
+            }
+            autoComplete.AddRange(str);
+            return autoComplete;
+        }
+        DataTable LoadDsDG()
+        {
+            int rs = 0;
+            DocGiaBUS bus = new DocGiaBUS();
+            return bus.LayDanhSachDocGia(rs);
         }
 
         void LoadMaPhieuMuon()
         {
             QuanLyPhieuMuonBUS BUS = new QuanLyPhieuMuonBUS();
             DataTable dtMaPM = BUS.LayMaPhieuMuon();
-            string ma = dtMaPM.Rows[0]["MaPM"].ToString();
+            string ma = dtMaPM.Rows[dtMaPM.DefaultView.Count-1]["MaPM"].ToString();
             int lastIndex = int.Parse(ma.Substring(2)) + 1;
             txtMaPhieuMuon.Text = "PM" + lastIndex.ToString("000");
         }
@@ -123,6 +147,40 @@ namespace GUI.ManHinhChucNang
             ListViTri.Clear();
         }
 
+
+
+        private void txtMaDG_Leave(object sender, EventArgs e)
+        {
+            if (txtMaDG.Text != "")
+            {
+                QuanLyPhieuMuonBUS BUS = new QuanLyPhieuMuonBUS();
+                DataTable dtDocGia = BUS.LayDocGia(txtMaDG.Text);
+                if (dtDocGia.Rows.Count > 0)
+                {
+                    txtHoTenDG.Text = dtDocGia.Rows[0]["HoTenDG"].ToString();
+                    txtNgaySinh.Text = dtDocGia.Rows[0]["NgaySinh"].ToString().Substring(0, 10);
+                    txtLoaiDocGia.Text = dtDocGia.Rows[0]["TenLoaiDG"].ToString();
+                    TinhTrangDG = dtDocGia.Rows[0]["TTDG"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Mã độc giả không tồn tại", "THÔNG BÁO");
+                    txtMaDG.Text = "";
+                    txtHoTenDG.Text = "";
+                    txtNgaySinh.Text = "";
+                    txtLoaiDocGia.Text = "";
+                    txtMaDG.Focus();
+                }
+            }
+        }
+
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.ChuyenTrang(0);
+        }
+
+
         private void dtgrvPM_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             if (dtgrvPM.Rows[e.RowIndex].Cells[1].Value == null)
@@ -184,58 +242,6 @@ namespace GUI.ManHinhChucNang
             }
         }
 
-        private void dtgrvPM_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
-        {
-            STTSach++;
-            SapXepSTT();
-        }
-
-        private void SapXepSTT()
-        {
-            for (int i = 0; i < dtgrvPM.RowCount; i++)
-            {
-                dtgrvPM[0, i].Value = i + 1;
-            }
-        }
-
-        private void txtMaDG_Leave(object sender, EventArgs e)
-        {
-            if (txtMaDG.Text != "")
-            {
-                QuanLyPhieuMuonBUS BUS = new QuanLyPhieuMuonBUS();
-                DataTable dtDocGia = BUS.LayDocGia(txtMaDG.Text);
-                if (dtDocGia.Rows.Count > 0)
-                {
-                    txtHoTenDG.Text = dtDocGia.Rows[0]["HoTenDG"].ToString();
-                    txtNgaySinh.Text = dtDocGia.Rows[0]["NgaySinh"].ToString().Substring(0, 10);
-                    txtLoaiDocGia.Text = dtDocGia.Rows[0]["TenLoaiDG"].ToString();
-                    TinhTrangDG = dtDocGia.Rows[0]["TTDG"].ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Mã độc giả không tồn tại", "THÔNG BÁO");
-                    txtMaDG.Text = "";
-                    txtHoTenDG.Text = "";
-                    txtNgaySinh.Text = "";
-                    txtLoaiDocGia.Text = "";
-                    txtMaDG.Focus();
-                }
-            }
-        }
-
-        private void dtgrvPM_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
-        {
-            SapXepSTT();
-        }
-
-        private void dtgrvPM_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dtgrvPM[1, e.RowIndex].Value != null)
-            {
-                MaBiXoa = dtgrvPM[1, e.RowIndex].Value.ToString();
-            }
-        }
-
         private void dtgrvPM_RowLeave(object sender, DataGridViewCellEventArgs e)
         {
             if (dtgrvPM.Rows != null && dtgrvPM.Rows.Count > MaxSach)
@@ -248,9 +254,30 @@ namespace GUI.ManHinhChucNang
             }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void dtgrvPM_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
         {
-            this.ChuyenTrang(0);
+            SapXepSTT();
+        }
+        private void SapXepSTT()
+        {
+            for (int i = 0; i < dtgrvPM.RowCount; i++)
+            {
+                dtgrvPM[0, i].Value = i + 1;
+            }
+        }
+
+        private void dtgrvPM_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            STTSach++;
+            SapXepSTT();
+        }
+
+        private void dtgrvPM_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgrvPM[1, e.RowIndex].Value != null)
+            {
+                MaBiXoa = dtgrvPM[1, e.RowIndex].Value.ToString();
+            }
         }
     }
 }

@@ -199,6 +199,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhChucNangGhiNhanMatSach";
             this.Size = new System.Drawing.Size(907, 652);
+            this.Load += new System.EventHandler(this.ManHinhChucNangGhiNhanMatSach_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Data;
 using System.Windows.Forms;
 using static GUI.MenuForm;
@@ -7,6 +8,7 @@ namespace GUI.ManHinhChucNang
 {
     public partial class ManHinhChucNangTraCuuSach : UserControl
     {
+        SachBUS bUS = new SachBUS();
         HamChuyenTrang ChuyenTrangChu;
         public ManHinhChucNangTraCuuSach(HamChuyenTrang ChuyenTrangChu)
         {
@@ -17,19 +19,19 @@ namespace GUI.ManHinhChucNang
         private void ManHinhChucNangTraCuuSach_Load(object sender, EventArgs e)
         {
            
-            DataTable dataTable = BUS.SachBUS.GetDatasByCommand("SELECT MaTheLoai, TenTheLoai FROM TheLoaiSach");
+            DataTable dataTable = bUS.GetDatasByCommand("SELECT MaTheLoai, TenTheLoai FROM TheLoaiSach");
             cbCategory.DataSource = dataTable;
             cbCategory.DisplayMember = "TenTheLoai";
             cbCategory.ValueMember = "MaTheLoai";
 
            
-            dataTable = BUS.SachBUS.GetDatasByCommand("SELECT MaTacGia, TenTacGia FROM TACGIA");
+            dataTable = bUS.GetDatasByCommand("SELECT MaTacGia, TenTacGia FROM TACGIA");
             cbAuthor.DataSource = dataTable;
             cbAuthor.DisplayMember = "TenTacGia";
             cbAuthor.ValueMember = "MaTacGia";
 
             
-            dataTable = BUS.SachBUS.GetDatasByCommand("SELECT MaNXB, TenNXB FROM NHAXUATBAN");
+            dataTable = bUS.GetDatasByCommand("SELECT MaNXB, TenNXB FROM NHAXUATBAN");
             cbPublisher.DataSource = dataTable;
             cbPublisher.DisplayMember = "TenNXB";
             cbPublisher.ValueMember = "MaNXB";
@@ -45,7 +47,7 @@ namespace GUI.ManHinhChucNang
                 MaMXB = cbPublisher.SelectedValue.ToString(),
             };
 
-            dgvBook.DataSource = BUS.SachBUS.FindBook(book);
+            dgvBook.DataSource =bUS.FindBook(book);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

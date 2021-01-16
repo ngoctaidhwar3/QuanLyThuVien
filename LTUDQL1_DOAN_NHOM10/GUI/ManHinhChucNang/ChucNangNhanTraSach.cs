@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 using BUS;
+using BUS.DocGiaBUS;
 using DTO;
 using static GUI.MenuForm;
 
@@ -31,11 +32,33 @@ namespace GUI.ManHinhChucNang
             txtMaDG.Focus();
             QuanLyPhieuMuonBUS BUSPM = new QuanLyPhieuMuonBUS();
             DataTable dtQuyDinh = BUSPM.LayQuyDinh();
+            txtMaDG.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            txtMaDG.AutoCompleteMode = AutoCompleteMode.Suggest;
+            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+            DataTable dtDsDG = LoadDsDG();
+            collection= LoadSuggestTextBox(dtDsDG);
+            txtMaDG.AutoCompleteCustomSource = collection;
             soNgayMuonQuyDinh = int.Parse(dtQuyDinh.Rows[0]["SoNgayMuonToiDa"].ToString());
             SoTienPhatQuyDinh = float.Parse(dtQuyDinh.Rows[0]["TienPhatTraTre"].ToString());
             dtgrPhieuTra.Enabled = false;
         }
-
+        AutoCompleteStringCollection LoadSuggestTextBox(DataTable dt)
+        {
+            string[] str = new string[dt.DefaultView.Count-1];
+            AutoCompleteStringCollection autoComplete = new AutoCompleteStringCollection();
+            for (int i = 0; i < dt.DefaultView.Count-1; i++)
+            {
+                str[i]=dt.Rows[i]["MaDocGia"].ToString();
+            }
+            autoComplete.AddRange(str);
+            return autoComplete;
+        }
+        DataTable LoadDsDG()
+        {
+            int rs = 0;
+            DocGiaBUS bus = new DocGiaBUS();
+            return bus.LayDanhSachDocGia(rs);
+        }
         void LoadMaPhieuTra()
         {
             QuanLyPhieuTraBUS BUS = new QuanLyPhieuTraBUS();

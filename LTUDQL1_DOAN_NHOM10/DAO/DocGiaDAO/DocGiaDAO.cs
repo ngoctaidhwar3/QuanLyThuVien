@@ -26,7 +26,24 @@ namespace DAO.DocGiaDAO
 				provider.DisConnect();
 			}
 		}
-
+		public DataTable LayDanhSachDocGia(int rs)
+		{
+			try
+			{
+				provider.Connect();
+				string query = "SELECT MaDocGia,HoTenDG FROM DocGia";
+				DataTable table = provider.SELECT(CommandType.Text, query);
+				return table;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+			finally
+			{
+				provider.DisConnect();
+			}
+		}
 
 		public void ThemDocGia(DocGiaDTO DocGia)
 		{

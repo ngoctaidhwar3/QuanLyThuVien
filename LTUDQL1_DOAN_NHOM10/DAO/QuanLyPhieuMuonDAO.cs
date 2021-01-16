@@ -77,7 +77,7 @@ namespace DAO
         {
             try
             {
-                string strSQL = "SELECT TOP(1) MaPM FROM PHIEUMUONSACH ORDER BY MaPM";
+                string strSQL = "SELECT MaPM FROM PHIEUMUONSACH ORDER BY MaPM";
                 provider.Connect();
                 DataTable dtTable = provider.SELECT(CommandType.Text, strSQL);
                 return dtTable;

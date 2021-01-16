@@ -8,6 +8,7 @@ namespace GUI.ManHinhChucNang
 {
     public partial class ManHinhChucNangTiepNhanSachMoi : UserControl
     {
+        SachBUS bUS = new SachBUS();
         const int bookIdLength = 8;
         HamChuyenTrang ChuyenTrangChu;
         public ManHinhChucNangTiepNhanSachMoi(HamChuyenTrang ChuyenTrangChu)
@@ -18,7 +19,7 @@ namespace GUI.ManHinhChucNang
 
         private string GenerateBookId()
         {
-            DataTable dataTable = BUS.SachBUS.GetDatasByCommand("select top 1 * from SACH order by MaSach DESC");
+            DataTable dataTable = bUS.GetDatasByCommand("SELECT TOP 1 * FROM SACH ORDER BY MaSach");
             int oldBookId = int.Parse(dataTable.Rows[0][0].ToString().Substring(1, 3));
             oldBookId++;
 
@@ -28,17 +29,17 @@ namespace GUI.ManHinhChucNang
 
         private void LoadComboBoxesData()
         {
-            DataTable dataTable = BUS.SachBUS.GetDatasByCommand("SELECT MaTheLoai, TenTheLoai FROM TheLoaiSach");
+            DataTable dataTable = bUS.GetDatasByCommand("SELECT MaTheLoai, TenTheLoai FROM TheLoaiSach");
             cbCategory.DataSource = dataTable;
             cbCategory.DisplayMember = "TenTheLoai";
             cbCategory.ValueMember = "MaTheLoai";
 
-            dataTable = BUS.SachBUS.GetDatasByCommand("SELECT MaTacGia, TenTacGia FROM TACGIA");
+            dataTable = bUS.GetDatasByCommand("SELECT MaTacGia, TenTacGia FROM TACGIA");
             cbAuthor.DataSource = dataTable;
             cbAuthor.DisplayMember = "TenTacGia";
             cbAuthor.ValueMember = "MaTacGia";
 
-            dataTable = BUS.SachBUS.GetDatasByCommand("SELECT MaNXB, TenNXB FROM NHAXUATBAN");
+            dataTable = bUS.GetDatasByCommand("SELECT MaNXB, TenNXB FROM NHAXUATBAN");
             cbPublisher.DataSource = dataTable;
             cbPublisher.DisplayMember = "TenNXB";
             cbPublisher.ValueMember = "MaNXB";
@@ -55,7 +56,7 @@ namespace GUI.ManHinhChucNang
             string bookId = GenerateBookId();
 
             
-            while (BUS.SachBUS.WasExistBookId(bookId))
+            while (bUS.WasExistBookId(bookId))
             {
                 bookId = GenerateBookId();
             }
@@ -117,7 +118,7 @@ namespace GUI.ManHinhChucNang
                 MaNVTiepNhan = cbbTaker.SelectedValue.ToString()
             };
 
-            int result = BUS.SachBUS.AddANewBook(book);
+            int result = bUS.AddANewBook(book);
 
             if (1 == result)
             {

@@ -39,6 +39,19 @@ namespace BUS.DocGiaBUS
                 throw ex;
             }
         }
+        public DataTable LayDanhSachDocGia(int rs)
+        {
+            try
+            {
+                DocGiaDAO dsDocGia = new DocGiaDAO();
+                DataTable table = dsDocGia.LayDanhSachDocGia(rs);
+                return table;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
         public void ThemDocGia(DocGiaDTO DocGia)
         {
             try

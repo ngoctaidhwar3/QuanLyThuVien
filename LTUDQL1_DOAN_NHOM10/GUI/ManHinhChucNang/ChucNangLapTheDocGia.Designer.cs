@@ -48,12 +48,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnChonHinh = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnChupHinh = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtEmail.Location = new System.Drawing.Point(395, 326);
+            this.txtEmail.Location = new System.Drawing.Point(174, 320);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(289, 30);
@@ -64,7 +69,7 @@
             this.cbbMaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbMaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbbMaNhanVien.FormattingEnabled = true;
-            this.cbbMaNhanVien.Location = new System.Drawing.Point(395, 423);
+            this.cbbMaNhanVien.Location = new System.Drawing.Point(174, 417);
             this.cbbMaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMaNhanVien.Name = "cbbMaNhanVien";
             this.cbbMaNhanVien.Size = new System.Drawing.Size(289, 33);
@@ -74,7 +79,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 423);
+            this.label1.Location = new System.Drawing.Point(18, 417);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 25);
             this.label1.TabIndex = 83;
@@ -84,7 +89,7 @@
             // 
             this.dtpNgaySinh.CustomFormat = "dd MM yyyy";
             this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgaySinh.Location = new System.Drawing.Point(395, 233);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(174, 227);
             this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(289, 30);
@@ -94,7 +99,7 @@
             // 
             this.dtpNgayTiepNhan.CustomFormat = "";
             this.dtpNgayTiepNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayTiepNhan.Location = new System.Drawing.Point(395, 78);
+            this.dtpNgayTiepNhan.Location = new System.Drawing.Point(174, 72);
             this.dtpNgayTiepNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgayTiepNhan.Name = "dtpNgayTiepNhan";
             this.dtpNgayTiepNhan.Size = new System.Drawing.Size(289, 30);
@@ -141,7 +146,7 @@
             this.cbbLoaiDocGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbLoaiDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbbLoaiDocGia.FormattingEnabled = true;
-            this.cbbLoaiDocGia.Location = new System.Drawing.Point(395, 371);
+            this.cbbLoaiDocGia.Location = new System.Drawing.Point(174, 365);
             this.cbbLoaiDocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbLoaiDocGia.Name = "cbbLoaiDocGia";
             this.cbbLoaiDocGia.Size = new System.Drawing.Size(289, 33);
@@ -151,7 +156,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(239, 371);
+            this.label9.Location = new System.Drawing.Point(18, 365);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(123, 25);
             this.label9.TabIndex = 75;
@@ -161,7 +166,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(239, 326);
+            this.label8.Location = new System.Drawing.Point(18, 320);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 25);
             this.label8.TabIndex = 72;
@@ -171,7 +176,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(239, 233);
+            this.label7.Location = new System.Drawing.Point(18, 227);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(105, 25);
             this.label7.TabIndex = 71;
@@ -180,7 +185,7 @@
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtDiaChi.Location = new System.Drawing.Point(395, 279);
+            this.txtDiaChi.Location = new System.Drawing.Point(174, 273);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(289, 30);
@@ -190,7 +195,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(239, 279);
+            this.label6.Location = new System.Drawing.Point(18, 273);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 25);
             this.label6.TabIndex = 69;
@@ -199,7 +204,7 @@
             // txtHoTen
             // 
             this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtHoTen.Location = new System.Drawing.Point(395, 187);
+            this.txtHoTen.Location = new System.Drawing.Point(174, 181);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(289, 30);
@@ -209,7 +214,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(239, 189);
+            this.label5.Location = new System.Drawing.Point(18, 183);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 25);
             this.label5.TabIndex = 67;
@@ -219,7 +224,7 @@
             // 
             this.txtMaDocGia.Enabled = false;
             this.txtMaDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtMaDocGia.Location = new System.Drawing.Point(395, 139);
+            this.txtMaDocGia.Location = new System.Drawing.Point(174, 133);
             this.txtMaDocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.Size = new System.Drawing.Size(289, 30);
@@ -229,7 +234,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(239, 139);
+            this.label3.Location = new System.Drawing.Point(18, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 25);
             this.label3.TabIndex = 64;
@@ -239,7 +244,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(239, 83);
+            this.label2.Location = new System.Drawing.Point(18, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 25);
             this.label2.TabIndex = 63;
@@ -255,10 +260,55 @@
             this.label12.TabIndex = 62;
             this.label12.Text = "LẬP THẺ ĐỘC GIẢ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(492, 120);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(395, 254);
+            this.pictureBox1.TabIndex = 88;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnChonHinh
+            // 
+            this.btnChonHinh.Location = new System.Drawing.Point(556, 70);
+            this.btnChonHinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChonHinh.Name = "btnChonHinh";
+            this.btnChonHinh.Size = new System.Drawing.Size(125, 44);
+            this.btnChonHinh.TabIndex = 87;
+            this.btnChonHinh.Text = "Chọn hình";
+            this.btnChonHinh.UseVisualStyleBackColor = true;
+            this.btnChonHinh.Click += new System.EventHandler(this.btnChonHinh_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(497, 77);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 25);
+            this.label4.TabIndex = 86;
+            this.label4.Text = "Hình";
+            // 
+            // btnChupHinh
+            // 
+            this.btnChupHinh.Location = new System.Drawing.Point(715, 70);
+            this.btnChupHinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChupHinh.Name = "btnChupHinh";
+            this.btnChupHinh.Size = new System.Drawing.Size(125, 44);
+            this.btnChupHinh.TabIndex = 89;
+            this.btnChupHinh.Text = "Chụp hình";
+            this.btnChupHinh.UseVisualStyleBackColor = true;
+            this.btnChupHinh.Click += new System.EventHandler(this.btnChupHinh_Click);
+            // 
             // ManHinhChucNangLapTheDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnChupHinh);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnChonHinh);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.cbbMaNhanVien);
             this.Controls.Add(this.label1);
@@ -283,6 +333,7 @@
             this.Name = "ManHinhChucNangLapTheDocGia";
             this.Size = new System.Drawing.Size(907, 652);
             this.Load += new System.EventHandler(this.ManHinhChucNangLapTheDocGia_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +361,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnChonHinh;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnChupHinh;
     }
 }

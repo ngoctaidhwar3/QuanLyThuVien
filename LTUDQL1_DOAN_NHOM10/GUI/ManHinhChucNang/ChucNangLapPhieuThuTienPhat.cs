@@ -17,7 +17,7 @@ namespace GUI.ManHinhChucNang
             InitializeComponent();
             this.ChuyenTrangChu = ChuyenTrangChu;
         }
-        public void loadData()
+        public void LoadData()
         {
             PhieuThuTienPhatBUS bus = new PhieuThuTienPhatBUS();
             dgvDSDocGiaNo.DataSource = bus.LayDSDocGiaNo();
@@ -27,8 +27,14 @@ namespace GUI.ManHinhChucNang
 
         private void ManHinhChucNangLapPhieuThuTienPhat_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Hãy chọn một phiếu trả còn nợ để thu tiền phạt");
-            loadData();
+            
+            LoadData();
+            if (dgvDSDocGiaNo.Rows.Count > 0)
+            {
+                txtMaDG.Text = dgvDSDocGiaNo.Rows[0].Cells["MaDG"].Value.ToString();
+                txtMaPT.Text = dgvDSDocGiaNo.Rows[0].Cells["MaPT"].Value.ToString();
+                txtTienNo.Text = dgvDSDocGiaNo.Rows[0].Cells["TienNo"].Value.ToString();
+            }
         }
 
         private void dgvDSDocGiaNo_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -108,7 +114,7 @@ namespace GUI.ManHinhChucNang
                 MessageBox.Show("Đã thanh toán tiền nợ! Đã thêm vào danh sách phiếu trả");
 
             }
-            loadData();
+            LoadData();
         }
         private void txtNguoiLapPhieu_Leave(object sender, EventArgs e)
         {

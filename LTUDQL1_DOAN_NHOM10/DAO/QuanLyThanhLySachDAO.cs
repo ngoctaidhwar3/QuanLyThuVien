@@ -81,7 +81,7 @@ namespace DAO
         {
             try
             {
-                string strSQL = "SELECT TOP 1 MaPhieuThanhLy FROM  ThanhLySach ORDER BY MaPhieuThanhLy";
+                string strSQL = "SELECT MaPhieuThanhLy FROM  ThanhLySach ORDER BY MaPhieuThanhLy";
                 provider.Connect();
 
                 DataTable dtMaPhieuThanhLy = provider.SELECT(CommandType.Text, strSQL);

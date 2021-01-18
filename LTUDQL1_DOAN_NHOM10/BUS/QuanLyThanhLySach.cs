@@ -53,7 +53,7 @@ namespace BUS
                 QuanLyThanhLySachDAO quanLyThanhLySachDAO = new QuanLyThanhLySachDAO();
                 DataTable dtMaPhieuThanhLy = quanLyThanhLySachDAO.LayMaPhieuLonNhat();
 
-                string MaPhieuLonNhat = dtMaPhieuThanhLy.Rows[0]["MaPhieuThanhLy"].ToString();
+                string MaPhieuLonNhat = dtMaPhieuThanhLy.Rows[dtMaPhieuThanhLy.DefaultView.Count-1]["MaPhieuThanhLy"].ToString();
                 int num = int.Parse(MaPhieuLonNhat.Substring(4)) + 1;
                 string MaMoi = "PTLS" + num.ToString("000");
                 return MaMoi;

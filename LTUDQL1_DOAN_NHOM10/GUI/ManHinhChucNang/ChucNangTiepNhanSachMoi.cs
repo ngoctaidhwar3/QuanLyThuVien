@@ -19,8 +19,8 @@ namespace GUI.ManHinhChucNang
 
         private string GenerateBookId()
         {
-            DataTable dataTable = bUS.GetDatasByCommand("SELECT TOP 1 * FROM SACH ORDER BY MaSach");
-            int oldBookId = int.Parse(dataTable.Rows[0][0].ToString().Substring(1, 3));
+            DataTable dataTable = bUS.GetDatasByCommand("SELECT MaSach FROM SACH ORDER BY MaSach");
+            int oldBookId = int.Parse(dataTable.Rows[dataTable.DefaultView.Count-1]["MaSach"].ToString().Substring(1, 3));
             oldBookId++;
 
             string newBookId = "S" + oldBookId.ToString("000");

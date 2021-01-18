@@ -6,7 +6,7 @@ namespace DAO
 {
     class Provider
     {
-        string ConnectionString = @"Data Source=NGOCTAI\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+        string ConnectionString = @"Data Source=TAI_VT\NGOCTAI;Initial Catalog=QuanLyThuVien;Integrated Security=True";
 
         SqlConnection Connection;
         

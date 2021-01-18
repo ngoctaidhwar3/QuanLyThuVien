@@ -63,7 +63,7 @@ namespace GUI.ManHinhChucNang
         {
             QuanLyPhieuTraBUS BUS = new QuanLyPhieuTraBUS();
             DataTable dtMaPT = BUS.LayMaPhieuTra();
-            string ma = dtMaPT.Rows[0]["MaPT"].ToString();
+            string ma = dtMaPT.Rows[dtMaPT.DefaultView.Count-1]["MaPT"].ToString();
             int lastIndex = int.Parse(ma.Substring(2)) + 1;
             txtMaPhieuTra.Text = "PT" + lastIndex.ToString("000");
         }

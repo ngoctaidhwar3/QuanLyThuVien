@@ -11,7 +11,7 @@ namespace DAO
         {
             try
             {
-                string strSQL = "SELECT TOP(1) MaPT FROM PHIEUTRASACH ORDER BY MaPT";
+                string strSQL = "SELECT MaPT FROM PHIEUTRASACH ORDER BY MaPT";
                 provider.Connect();
                 DataTable dtTable = provider.SELECT(CommandType.Text, strSQL);
                 return dtTable;

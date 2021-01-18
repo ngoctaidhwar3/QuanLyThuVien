@@ -262,6 +262,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pictureBox1.Location = new System.Drawing.Point(492, 120);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";

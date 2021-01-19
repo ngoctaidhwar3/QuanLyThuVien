@@ -96,7 +96,7 @@ namespace GUI.ManHinhChucNang
             {
                 
                 DataTable dtPhieuThu = bus.LayMaPhieuthu();
-                string maphieuthu = dtPhieuThu.Rows[0][0].ToString();
+                string maphieuthu = dtPhieuThu.Rows[dtPhieuThu.DefaultView.Count-1][0].ToString();
                 
                 int num = int.Parse(maphieuthu.Substring(4)) + 1;
                 string MaPhieuThu = "PTTP" + num.ToString("000");

@@ -52,7 +52,7 @@ namespace DAO
             try
             {
                 pro.Connect();
-                string strSql = "SELECT TOP 1 MaPhieuThu FROM PHIEUTHUTIENPHAT ORDER BY MaPhieuThu";
+                string strSql = "SELECT MaPhieuThu FROM PHIEUTHUTIENPHAT ORDER BY MaPhieuThu";
                 dt = pro.SELECT(CommandType.Text, strSql);
                 return dt;
             }
